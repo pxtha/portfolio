@@ -3,77 +3,89 @@ module.exports = {
     // Site URL for when it goes live
     siteUrl: `https://elastic-meninsky-aa7c74.netlify.app/`,
     // Your Name
-    name: 'Ryan Fitzgerald',
+    name: 'Thang Pham',
     // Main Site Title
-    title: `Ryan Fitzgerald | Full-Stack Developer`,
+    title: `Thang Pham | Full-Stack Developer`,
     // Description that goes under your name in main bio
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit, ipsum.`,
-    // Optional: Twitter account handle
-    author: `@rfitzio`,
+    description: `Hey there! I'm a developer from Vietnam. I love building and growing applications for all sorts of industries. Always learning, always growing!`,
     // Optional: Github account URL
-    github: `https://github.com/ryanfitzgerald`,
+    github: `https://github.com/pxtha`,
     // Optional: LinkedIn account URL
-    linkedin: `https://www.linkedin.com/in/ryanafitzgerald/`,
+    linkedin: `https://www.linkedin.com/in/pxtha/`,
     // Content of the About Me section
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
+    about: `Hello! I'm a Software Engineer with nearly 4 years of professional experience under my belt. I have a deep passion for software development and harbor aspirations of establishing my own product in the future. I'm always ready to take on new challenges and grow both personally and professionally.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
-        name: 'Devfolio',
-        description:
-          'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'Joon',
+        description:'Our mission is to connect single Muslims looking for a fulfilling Marriage',
+        link: '/blog/joon',
+        images: ['https://i.noormatch.app/0x0,sc,s/noormatch/29fac37d-27b1-42b3-a522-d4a63809aae4/image/90393b62-17ed-4789-8852-df6d68c70f49.jpg'],
       },
       {
-        name: 'ChromeExtensionKit',
-        description:
-          'Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates',
-        link: 'https://chromeextensionkit.com/?ref=devfolio',
+        name: 'Wesaidspacesaid',
+        description: 'Create landing page, booking page, and admin page for a coffee station in Vietnam. ',
+        link: '/blog/wsss',
+        images: ['https://i.noormatch.app/0x0,sc,s/noormatch/356016f3-bebb-4689-81ac-592044c79487/image/af9b4d28-cba4-49b1-b9d1-a00a98b79e1c.jpg'],
       },
       {
-        name: 'Another Cool Project',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus perferendis',
+        name: 'Magic Resume',
+        description:'A resume builder that helps you create and manage professional resumes in minutes. The platform offers a wide range of templates and customization options to help you create a resume that stands out.',
         link: 'https://github.com/RyanFitzgerald/devfolio',
+        images: ['https://i.noormatch.app/0x0,sc,s/noormatch/356016f3-bebb-4689-81ac-592044c79487/image/7321c732-b098-4d33-ae71-6e3a0da78dbf.jpg'],
       },
+      {
+        name: 'Style Sphere',
+        description: 'A comprehensive online fashion store for men and women, built using the headless CMS. The platform offers a seamless shopping experience across web and mobile applications, featuring a wide range of fashion products.',
+        link: 'https://github.com/RyanFitzgerald/devfolio',
+        images: ['https://i.noormatch.app/0x,0,sc,s/noormatch/356016f3-bebb-4689-81ac-592044c79487/image/b0725e10-5c1c-4712-867d-2a325aa2f895.jpg'],
+      }
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
-        name: 'Acme Corp',
-        description: 'Full-Stack Developer, February 2020 - Present',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'Joon',
+        description: 'Technical Lead, Oct 2021 - Present',
+        type: 'Remote, Part-time',
+        link: 'https://myjoon.app/',
       },
       {
-        name: 'Globex Corp',
-        description: 'Full-Stack Developer, December 2017 - February 2020',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'CMC Global',
+        description: 'Senior Software Engineer, Dec 2023 - Present',
+        type: 'On-site, Fulltime',
+        link: 'https://cmcglobal.vn/',
       },
       {
-        name: 'Hooli',
-        description: 'Full-Stack Developer, May 2015 - December 2017',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: ' FPT Software',
+        description: 'Backend Developer, Oct 2020 - Oct 2021 · 1yr',
+        type: 'On-site, Fulltime',
+        link: 'https://fptsoftware.com/',
+      },
+      {
+        name: 'TMA Solutions',
+        description: 'Backend Developer, Jun 2019 - Oct 2020 · 1yr',
+        type: 'On-site, Fulltime',
+        link: 'https://www.tmasolutions.com/',
       },
     ],
     // Optional: List your skills, they must have `name` and `description`.
     skills: [
       {
-        name: 'Languages & Frameworks',
-        description:
-          'JavaScript (ES6+), Golang, Node.js, Express.js, React, Ruby on Rails, PHP',
+        name: 'Leadership',
+        description: 'Proven ability to lead teams and manage projects effectively.',
       },
       {
-        name: 'Databases',
-        description: 'MongoDB, PostreSQL, MySQL',
+        name: 'Problem Solving',
+        description: 'Strong problem-solving skills with a knack for finding creative solutions to complex technical issues.',
       },
       {
-        name: 'Other',
-        description:
-          'Docker, Amazon Web Services (AWS), CI / CD, Microservices, API design, Agile / Scrum',
+        name: 'Senior Developer',
+        description: 'Experienced senior developer with proficiency in multiple tech stacks.',
       },
     ],
   },
   plugins: [
+    `gatsby-plugin-transition-link`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

@@ -3,6 +3,7 @@ import React from 'react';
 import Section from '../section';
 import SummaryItem from '../summary-item';
 
+
 const SectionProjects = ({ projects }) => {
   if (!projects.length) return null;
 
@@ -14,6 +15,8 @@ const SectionProjects = ({ projects }) => {
           name={project.name}
           description={project.description}
           link={project.link}
+          images={project.images}
+          internal={true}
         />
       ))}
     </Section>
