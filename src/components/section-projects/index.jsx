@@ -17,6 +17,7 @@ const SectionProjects = ({ projects }) => {
           link={project.link}
           images={project.images}
           internal={true}
+          color={project.color}
         />
       ))}
     </Section>
