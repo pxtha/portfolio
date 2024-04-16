@@ -75,16 +75,16 @@ module.exports = {
     // Optional: List your skills, they must have `name` and `description`.
     skills: [
       {
+        name: 'Senior Developer',
+        description: 'Experienced senior developer with proficiency in multiple tech stacks. In-depth knowledge of modern application development technologies.',
+      },
+      {
         name: 'Leadership',
         description: 'Proven ability to lead teams and manage projects effectively.',
       },
       {
         name: 'Problem Solving',
         description: 'Strong problem-solving skills with a knack for finding creative solutions to complex technical issues.',
-      },
-      {
-        name: 'Senior Developer',
-        description: 'Experienced senior developer with proficiency in multiple tech stacks.',
       },
     ],
   },

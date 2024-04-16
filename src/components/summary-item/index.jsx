@@ -28,11 +28,7 @@ const SummaryItem = ({
   let linkContent;
   if (internal) {
     linkContent = (
-      <TransitionLink
-        to={link}
-        exit={{ length: 1 }}
-        entry={{ delay: 0.1, length: 1 }}
-      >
+      <TransitionLink to={link} entry={{ delay: 0.1, length: 1 }}>
         {name}
       </TransitionLink>
     );
@@ -43,17 +39,13 @@ const SummaryItem = ({
   return (
     <div className={classes.wrapper}>
       {images && images[0] && (
-          <TransitionLink
-          to={link}
-          exit={{ length: 1 }}
-          entry={{ delay: 0.1, length: 1 }}
-        >
+        <TransitionLink to={link}>
           <motion.div
             className={classes.imageWrapper}
             transition={{ duration: 0.5 }}
             style={{ background: color }}
           >
-              <img src={images[0]} alt={name} className={classes.child} />
+            <img src={images[0]} alt={name} className={classes.child} />
           </motion.div>
         </TransitionLink>
       )}

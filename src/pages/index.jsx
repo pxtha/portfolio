@@ -20,11 +20,11 @@ const Index = ({ data }) => {
       <SEO />
       <Header metadata={data.site.siteMetadata} />
       {about && <SectionAbout about={about} />}
-      {projects && projects.length && <SectionProjects projects={projects} />}
+      {skills && skills.length && <SectionSkills skills={skills} />}
       {experience && experience.length && (
         <SectionExperience experience={experience} />
       )}
-      {skills && skills.length && <SectionSkills skills={skills} />}
+      {projects && projects.length && <SectionProjects projects={projects} />}
     </Layout>
   );
 };
@@ -48,7 +48,6 @@ export const pageQuery = graphql`
           link
           color
           images
-
         }
         experience {
           name
