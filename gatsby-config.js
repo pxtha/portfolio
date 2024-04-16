@@ -21,28 +21,28 @@ module.exports = {
         description:'Our mission is to connect single Muslims looking for a fulfilling Marriage',
         link: '/blog/joon',
         images: ['https://i.noormatch.app/0x0,sc,s/noormatch/29fac37d-27b1-42b3-a522-d4a63809aae4/image/90393b62-17ed-4789-8852-df6d68c70f49.jpg'],
-        color: 'rgb(124, 202, 160)'
+        color: '#FFEEEE'
       },
       {
         name: 'Wesaidspacesaid',
         description: 'Create landing page, booking page, and admin page for a coffee station in Vietnam. ',
         link: '/blog/wsss',
         images: ['https://i.noormatch.app/0x0,sc,s/noormatch/356016f3-bebb-4689-81ac-592044c79487/image/af9b4d28-cba4-49b1-b9d1-a00a98b79e1c.jpg'],
-        color: 'rgb(10, 108, 188);'
+        color: '#fff'
       },
       {
         name: 'Magic Resume',
-        description:'A resume builder that helps you create and manage professional resumes in minutes. The platform offers a wide range of templates and customization options to help you create a resume that stands out.',
-        link: 'https://github.com/pxtha/magic-resume',
-        images: ['https://i.noormatch.app/0x0,sc,s/noormatch/356016f3-bebb-4689-81ac-592044c79487/image/7321c732-b098-4d33-ae71-6e3a0da78dbf.jpg'],
-        color: 'rgb(70, 91, 155)'
+        description:'A resume builder that helps you create and manage professional resumes in minutes.',
+        link: '/blog/magic-resume',
+        images: ['https://nick.computer/static/media/fenton-lg.aae58db69fffa6b8d1de.jpg'],
+        color: 'rgb(244, 245, 146)'
       },
       {
         name: 'Style Simple',
-        description: 'A comprehensive online fashion store for men and women, built using the headless CMS. The platform offers a seamless shopping experience across web and mobile applications, featuring a wide range of fashion products.',
-        link: 'https://github.com/pxtha/strapi-style',
-        images: ['https://i.noormatch.app/0x,0,sc,s/noormatch/356016f3-bebb-4689-81ac-592044c79487/image/b0725e10-5c1c-4712-867d-2a325aa2f895.jpg'],
-        color: 'rgb(244, 245, 146)'
+        description: 'The platform offers a seamless shopping experience across web and mobile applications, built using the headless CMS. ',
+        link: '/blog/style-simple',
+        images: ['https://nick.computer/static/media/br-lg.0231d6c2ec5ff69678d4.jpg'],
+        color: 'rgb(10, 108, 188)'
       }
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.

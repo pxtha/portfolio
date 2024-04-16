@@ -2,10 +2,9 @@
 title: Joon
 date: '2024-04-11T12:00:00.00Z'
 description: 'Our mission is to connect single Muslims looking for a fulfilling Marriage'
-background: 'https://i.noormatch.app/0x0,sc,s/noormatch/29fac37d-27b1-42b3-a522-d4a63809aae4/image/90393b62-17ed-4789-8852-df6d68c70f49.jpg'
 ---
 
-![Joon](./joon3.png)
+![Joon](./joon-asset.png)
 
 ## Project Summary
 
@@ -27,12 +26,12 @@ The Joon project was initiated to address the need for a Muslim marriage app tha
 
 The Joon project was developed by a team of 5 software engineers:
 
-- Team Lead
+- Team Lead: Thắng Phạm 
+- Business Analyst
 - Front-end Developer
 - Back-end Developer
 - Devops
 - Tester
-- Business Analyst
 
 The team worked collaboratively to design, develop, and deploy the Joon project.
 

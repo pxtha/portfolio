@@ -198,7 +198,7 @@ The pattern current used in the template when it comes to writing React componen
 ```jsx
 const classes = {
   wrapper: 'm-12 p-12',
-  text: 'text-lg text-gray-600 font-light',
+  text: 'text-lg text-gray-800 font-light',
 };
 
 const MyComponent = () => {

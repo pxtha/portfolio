@@ -1,8 +1,8 @@
 import { Link } from 'gatsby';
 import get from 'lodash/get';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FiSun, FiMoon } from 'react-icons/fi';
-import profileImg from '../../images/avatar3.gif';
+import profileImg from '../../images/avatar.gif';
 
 const classes = {
   wrapper: 'block mb-6 md:flex',
@@ -10,12 +10,12 @@ const classes = {
   image: 'rounded-full transform transition-all duration-150 hover:scale-105',
   contentWrapper: 'flex-none pt-6 md:pt-1 md:flex-1 md:pl-20',
   name: 'text-5xl text-gray-900 font-bold leading-tight hover:text-black',
-  description: 'text-gray-600',
+  description: 'text-gray-800',
   list: 'mt-6 uppercase tracking-wider',
   item: 'inline list-none pr-4',
-  link: 'inline-block py-2 font-semibold text-xs text-gray-600 hover:text-black bold uppercase tracking-wider transition-colors duration-150 ease-in-out',
+  link: 'inline-block py-2 font-semibold text-xs text-gray-800 hover:text-black bold uppercase tracking-wider transition-colors duration-150 ease-in-out',
   // move dark mode switch to the right
-  darkModeSwitch: 'flex items-center space-x-1 absolute top-0 right-0 mt-2 mr-2 z-10 text-gray-600',
+  darkModeSwitch: 'flex items-center space-x-1 absolute top-0 right-0 mt-2 mr-2 z-10 text-gray-800',
   darkModeCheckbox: 'opacity-0 w-0 h-0',
   darkModeSwitchBackground: 'cursor-pointer bg-gray-400 w-8 h-5 rounded-full p-1',
   darkModeSwitchHandle: 'bg-white w-3 h-3 rounded-full shadow-md transform duration-300 ease-in-out',
@@ -34,6 +34,7 @@ const Header = ({ metadata = {}, noBlog = false }) => {
     setDarkMode(!darkMode);
     document.body.classList.toggle('dark-mode');
   };
+  // toggle dark mode on load
   
   return (
     <div className={classes.wrapper}>
@@ -56,6 +57,20 @@ const Header = ({ metadata = {}, noBlog = false }) => {
         </h1>
         <p className={classes.description}>{metadata.description}</p>
         <ul className={classes.list}>
+          {
+            <li className={classes.item}>
+             <Link className={classes.link}  to="/">
+                Home
+              </Link>
+            </li>
+          }
+          {!noBlog && (
+            <li className={classes.item}>
+              <Link className={classes.link} to="/blog">
+                Blog
+              </Link>
+            </li>
+          )}
           {twitter && (
             <li className={classes.item}>
               <a
@@ -80,13 +95,7 @@ const Header = ({ metadata = {}, noBlog = false }) => {
               </a>
             </li>
           )}
-          {!noBlog && (
-            <li className={classes.item}>
-              <Link className={classes.link} to="/blog">
-                Blog
-              </Link>
-            </li>
-          )}
+
         </ul>
       </div>
     </div>
