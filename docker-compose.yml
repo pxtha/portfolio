@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  porfolio:
+    image: "porfolio:0.0.1"
+    container_name: porfolio
+    build: .
+    ports:
+      - "8999:80"
