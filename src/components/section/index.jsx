@@ -6,7 +6,7 @@ const classes = {
   // make heading bold
   heading:
     'font-xs font-bold tracking-widest text-sm text-gray-800 leading-normal uppercase',
-  content: 'flex-none text-xl text-gray-800 font-light md:flex-1 md:pl-20',
+  content: 'flex-none text-lg text-gray-800 font-light md:flex-1 md:pl-20',
 };
 
 const Section = ({ title, children }) => {

@@ -2,7 +2,7 @@
 title: My Second Blog Post
 date: '2020-10-02T12:00:00.00Z'
 description: 'Ratione dolore sequi in animi obcaecati incidunt reprehenderit illo repellat'
-background: './mountain.jpg'
+color: 'rgb(244, 245, 146)'
 ---
 
 ## Lorem ipsum dolor sit amet consectetur adipisicing elit

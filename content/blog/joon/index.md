@@ -2,9 +2,10 @@
 title: Joon
 date: '2024-04-11T12:00:00.00Z'
 description: 'Our mission is to connect single Muslims looking for a fulfilling Marriage'
+color: '#E6EFF6'
 ---
 
-![Joon](./joon-asset.png)
+![Joon](./asset.svg)
 
 ## Project Summary
 

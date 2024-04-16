@@ -46,8 +46,9 @@ export const pageQuery = graphql`
           name
           description
           link
-          images
           color
+          images
+
         }
         experience {
           name

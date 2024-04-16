@@ -2,7 +2,7 @@
 title: We Said Space Said
 date: '2024-04-11T12:00:00.00Z'
 description: 'The project includes a landing page, a booking page, and an admin page for managing bookings'
-background: './contact.png'
+color: 'rgb(70, 91, 155)'
 ---
 
 ![We Said Space Said](./contact.png)

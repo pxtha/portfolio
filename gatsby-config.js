@@ -20,15 +20,15 @@ module.exports = {
         name: 'Joon',
         description:'Our mission is to connect single Muslims looking for a fulfilling Marriage',
         link: '/blog/joon',
-        images: ['https://i.noormatch.app/0x0,sc,s/noormatch/29fac37d-27b1-42b3-a522-d4a63809aae4/image/90393b62-17ed-4789-8852-df6d68c70f49.jpg'],
-        color: '#FFEEEE'
+        images: ['https://i.myjoon.app/0x0,sc,s/joon-media/bca0d162-6fc3-4a23-8939-64c5906c80dc/image/91275444-3167-40fd-84e4-337d4e7b4b27.jpg'],
+        color: '#DEECF2'
       },
       {
         name: 'Wesaidspacesaid',
         description: 'Create landing page, booking page, and admin page for a coffee station in Vietnam. ',
         link: '/blog/wsss',
-        images: ['https://i.noormatch.app/0x0,sc,s/noormatch/356016f3-bebb-4689-81ac-592044c79487/image/af9b4d28-cba4-49b1-b9d1-a00a98b79e1c.jpg'],
-        color: '#fff'
+        images: ['https://nick.computer/static/media/realas-lg.d9bab4ac14f036998f99.jpg'],
+        color: 'rgb(70, 91, 155)'
       },
       {
         name: 'Magic Resume',
