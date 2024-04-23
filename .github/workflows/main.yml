@@ -8,20 +8,16 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
-        - name: Set up SSH
-          uses: webfactory/ssh-agent@v0.5.3
-          with:
-            ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-
-        - name: Disable Strict Host Key Checking
-          run: |
-            echo "Host *" >> ~/.ssh/config
-            echo "  StrictHostKeyChecking no" >> ~/.ssh/config
-
-        - name: SSH and Execute Commands
-          run: |
-            ssh -tt root@$157.230.241.123 << EOF
-            cd projects/portfolio
-            git checkout main
-            git pull
-            make
+          - name: Checkout
+            uses: actions/checkout@v2
+          - name: ssh
+            uses: appleboy/ssh-action@v1.0.3
+            with:
+              host: 157.230.241.123
+              username: root
+              key: ${{ secrets.SSH_PRIVATE_KEY }}
+              script: |
+                cd projects/portfolio
+                git checkout main
+                git pull
+                make
