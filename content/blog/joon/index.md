@@ -8,6 +8,7 @@ color: '#E6EFF6'
 ![Joon](./asset.svg)
 
 ## Project Summary
+For more details about the project, please visit the [Joon Page](https://myjoon.app/).
 
 The Joon project was initiated to address the need for a Muslim marriage app that provides a safe and secure platform for single Muslims to connect with each other for the purpose of marriage. The app was designed to facilitate halal conversations and interactions between users, while ensuring privacy and security.
 
@@ -40,20 +41,20 @@ The team worked collaboratively to design, develop, and deploy the Joon project.
 
 This project utilizes a variety of technologies to deliver a robust and scalable solution:
 
-### Front-end:
+#### Front-end:
 - **ReactJS**: Used for building the dashboard and web interfaces, ReactJS allows us to build complex user interfaces from isolated pieces of code called "components".
 - **Flutter**: Used for mobile application development. It's a UI toolkit that allows us to natively compile applications for mobile, web, and desktop from a single codebase.
 
-### Back-end:
+#### Back-end:
 - **Golang**: The backend service is written in Golang, which provides excellent performance and simplicity.
 - **Python**: For the AI auto verification profiles and recommendation system.
 
-### Database:
+#### Database:
 - **PostgreSQL**: This is our primary relational database, known for its reliability and robustness.
 - **Redis**: Used as an in-memory data structure store, used as a database, cache, and message broker.
 - **Dgraph**: Used for providing recommendation systems, leveraging its graph database capabilities.
 
-### Others:
+#### Others:
 - **Asynq**: This is our message queue of choice, providing reliable asynchronous task processing.
 - **Prometheus**: Used for event monitoring and alerting.
 - **Loki**: Integrated with Prometheus, Loki is used for centralized logging.
@@ -68,4 +69,3 @@ The Joon project was developed over a period of 2 years, starting from March 202
 
 The Joon project successfully launched in September 2020 and has gained a growing user base since then. It has received positive feedback for its user-friendly interface and the ability to connect like-minded individuals.
 
-For more details about the project, please visit the [Joon Page](https://myjoon.app/).

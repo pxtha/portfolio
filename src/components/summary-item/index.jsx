@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { FiArrowLeft } from 'react-icons/fi'; // Import the arrow icon
+import React from 'react';
 import TransitionLink from 'gatsby-plugin-transition-link';
 import { motion } from 'framer-motion';
-import { navigate } from 'gatsby';
+
+import joon from '../../images/joon.png';
+import wsss from '../../images/wsss.jpeg';
+import resume from '../../images/magic-resume.jpg';
+import shoptalk from '../../images/shoptalk.jpg';
 
 const classes = {
   wrapper:
@@ -13,7 +16,8 @@ const classes = {
     'imageWrapper flex-none bg-gray-100 rounded-md shadow-md transform transition-all duration-200',
   type: 'text-md text-gray-800 font-light italic pb-1 border-b border-gray-300',
   content: 'pl-4 flex flex-col justify-center',
-  child: 'child rounded-md w-full h-full object-cover',
+  child: 'child w-full h-full object-cover',
+  childFull : 'rounded-md w-full h-full object-cover',
 };
 
 const SummaryItem = ({
@@ -36,6 +40,19 @@ const SummaryItem = ({
     linkContent = <a href={link}>{name}</a>;
   }
 
+  function getImage(name) {
+    switch (name) {
+      case 'joon':
+        return <img src={joon} alt={name} className={classes.childFull} />
+      case 'wsss':
+        return <img src={wsss} alt={name} className={classes.childFull} />
+      case 'resume':
+        return <img src={resume} alt={name} className={classes.child} />
+      case 'shoptalk':
+        return <img src={shoptalk} alt={name} className={classes.child} />
+    }
+    return null;
+  }
   return (
     <div className={classes.wrapper}>
       {images && images[0] && (
@@ -44,8 +61,8 @@ const SummaryItem = ({
             className={classes.imageWrapper}
             transition={{ duration: 0.5 }}
             style={{ background: color }}
-          >
-            <img src={images[0]} alt={name} className={classes.child} />
+          >        
+            {getImage(images[0])}
           </motion.div>
         </TransitionLink>
       )}

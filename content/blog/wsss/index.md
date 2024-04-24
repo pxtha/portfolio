@@ -7,7 +7,9 @@ color: 'rgb(70, 91, 155)'
 
 ![We Said Space Said](./contact.png)
 
+
 ## Project Summary
+For more details about the project, please visit the [Wesaidspacesaid Page](https://wesaidspacesaid.com/).
 
 The We Said Space Said project was initiated to address the need for a comprehensive booking and management system for a workshop architecture coffee station. The project includes a landing page, a booking page, and an admin page for managing bookings. 
 
@@ -37,4 +39,3 @@ The system was designed to provide a seamless user experience for customers look
 #### Deployment:
 - **AWS EC2**: The application is deployed on an AWS EC2 instance, providing scalability and reliability.
 
-For more details about the project, please visit the [Wesaidspacesaid Page](https://wesaidspacesaid.com/).

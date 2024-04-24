@@ -7,13 +7,16 @@ module.exports = {
     // Main Site Title
     title: `Thang Pham | Full-Stack Developer`,
     // Description that goes under your name in main bio
-    description: `Hey there! I'm a developer from Vietnam. I love building and growing applications for all sorts of industries. Always learning, always growing!`,
+    description: `To leverage my 4+ years of experience in software engineering and my expertise in developing, testing, and maintaining software applications to efficiently contribute to the growth and success of innovative company.`,
     // Optional: Github account URL
     github: `https://github.com/pxtha`,
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/pxtha/`,
     // Content of the About Me section
-    about: `Hello! I'm a Software Engineer with nearly 4 years of experience. I have a deep passion for software development and harbor aspirations of establishing my own product in the future. I'm always ready to take on new challenges and grow both personally and professionally.`,
+    about: `
+     Proficient in both frontend and backend development. Built a full-stack application single-handedly that attracted over 5,000 users. Previously worked in startups and large corporations, demonstrating versatility in adapting to different work environments. 
+     Experience in a fast-paced startup environment, thriving in situations that require multitasking and problem-solving skills. 
+`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
@@ -22,9 +25,9 @@ module.exports = {
           'Our mission is to connect single Muslims looking for a fulfilling Marriage',
         link: '/blog/joon',
         images: [
-          'https://i.myjoon.app/0x0,sc,s/joon-media/bca0d162-6fc3-4a23-8939-64c5906c80dc/image/91275444-3167-40fd-84e4-337d4e7b4b27.jpg',
+          'joon',
         ],
-        color: '#DEECF2',
+        color: '#E7645F',
       },
       {
         name: 'Wesaidspacesaid',
@@ -32,7 +35,7 @@ module.exports = {
           'Create landing page, booking page, and admin page for a coffee station in Vietnam. ',
         link: '/blog/wsss',
         images: [
-          'https://nick.computer/static/media/realas-lg.d9bab4ac14f036998f99.jpg',
+          'wsss',
         ],
         color: 'rgb(70, 91, 155)',
       },
@@ -42,17 +45,17 @@ module.exports = {
           'A resume builder that helps you create and manage professional resumes in minutes.',
         link: '/blog/magic-resume',
         images: [
-          'https://nick.computer/static/media/fenton-lg.aae58db69fffa6b8d1de.jpg',
+          'resume',
         ],
         color: 'rgb(244, 245, 146)',
       },
       {
-        name: 'Style Simple',
+        name: 'ShopTalk AI',
         description:
-          'The platform offers a seamless shopping experience across web and mobile applications, built using the headless CMS. ',
-        link: '/blog/style-simple',
+          'Helps sellers increase revenue by optimizing the shopping experience of users. Exploiting the potential of AI, bringing sellers closer to technology in the easiest way',
+        link: '/blog/shoptalk-ai',
         images: [
-          'https://nick.computer/static/media/br-lg.0231d6c2ec5ff69678d4.jpg',
+          'shoptalk',
         ],
         color: 'rgb(10, 108, 188)',
       },
@@ -60,29 +63,23 @@ module.exports = {
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
-        name: 'Joon',
-        description: 'Technical Lead, Oct 2021 - Present',
-        type: 'Remote, Part-time',
-        link: 'https://myjoon.app/',
-      },
-      {
         name: 'CMC Global',
-        description: 'Senior Software Engineer, Dec 2023 - Present',
-        type: 'On-site, Fulltime',
+        description: 'As a Senior Software Engineer, I played a pivotal role in the presale team, supporting the sales team in the technical aspect. I contributed to project planning, task allocation, and progress tracking, resulting in on-time project deliveries and meeting user acquisition targets.',
+        type: 'Senior Software Engineer, Jan 2024 - Present',
         link: 'https://cmcglobal.vn/',
       },
       {
-        name: ' FPT Software',
-        description: 'Backend Developer, Oct 2020 - Oct 2021 · 1yr',
-        type: 'On-site, Fulltime',
-        link: 'https://fptsoftware.com/',
+      name: 'Joon',
+      description: 'As a Technical Lead, I successfully led a cross-functional team of 7 members with diverse roles including tester, business analyst, DevOps engineer, and junior developer. From project inception to release, we delivered a high-impact product to a user base of 5,000 individuals.',
+      type: 'Technical Lead, Oct 2021 - Present',
+      link: 'https://myjoon.app/',
       },
       {
-        name: 'TMA Solutions',
-        description: 'Backend Developer, Jun 2019 - Oct 2020 · 1yr',
-        type: 'On-site, Fulltime',
-        link: 'https://www.tmasolutions.com/',
-      },
+      name: 'Depocket',
+      description: 'As a Blockchain Developer, I championed the end-to-end development of blockchain-based features, spanning from conceptualization through testing.',
+      type: 'Blockchain Developer, Oct 2020 to Oct 2021',
+      link: 'https://www.depocket.com/',
+      }
     ],
     // Optional: List your skills, they must have `name` and `description`.
     skills: [
@@ -92,14 +89,24 @@ module.exports = {
           'Experienced senior developer with proficiency in multiple tech stacks. In-depth knowledge of modern application development technologies.',
       },
       {
-        name: 'Leadership',
+        name: 'Project Management',
         description:
-          'Proven ability to lead teams and manage projects effectively.',
+          'Proven ability to lead teams and manage projects effectively using Agile methodologies. Strong communication and interpersonal skills.',
       },
       {
-        name: 'Problem Solving',
+        name: 'Programing Languages',
         description:
-          'Strong problem-solving skills with a knack for finding creative solutions to complex technical issues.',
+          'Golang, ReactJS, Python',
+      },
+      {
+        name: 'Technology & Tools',
+        description:
+          'Docker, Kubernetes, Strapi, ServiceNow, AWS, DigitalOcean, Grafana, Loki, Datadog, Prometheus',
+      },
+      {
+        name: 'Database Systems',
+        description:
+          'PostgreSQL, MongoDB, Redis, Elasticsearch, Dgraph',
       },
     ],
   },
