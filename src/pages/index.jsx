@@ -20,11 +20,11 @@ const Index = ({ data }) => {
       <SEO />
       <Header metadata={data.site.siteMetadata} />
       {about && <SectionAbout about={about} />}
+      {projects && projects.length && <SectionProjects projects={projects} />}
       {skills && skills.length && <SectionSkills skills={skills} />}
       {experience && experience.length && (
         <SectionExperience experience={experience} />
       )}
-      {projects && projects.length && <SectionProjects projects={projects} />}
     </Layout>
   );
 };
@@ -36,6 +36,9 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         name
+        email
+        phone
+        address
         title
         description
         about

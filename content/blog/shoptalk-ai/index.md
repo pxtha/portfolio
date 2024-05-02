@@ -5,8 +5,6 @@ description: 'Helps sellers increase revenue by optimizing the shopping experien
 color: 'rgb(10, 108, 188)'
 ---
 
-![ShopTalk AI](./ai-chat-box.webp)
-
 
 # Ecommerce Chatbots: Enhancing the Shopping Experience with AI
 

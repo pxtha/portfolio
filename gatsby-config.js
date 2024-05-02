@@ -4,19 +4,21 @@ module.exports = {
     siteUrl: `https://elastic-meninsky-aa7c74.netlify.app/`,
     // Your Name
     name: 'Thang Pham',
+    email: 'pxthang97@gmail.com',
+    phone: '+84 347 252 363',
+    address: 'Ho Chi Minh, Vietnam',
     // Main Site Title
     title: `Thang Pham | Full-Stack Developer`,
     // Description that goes under your name in main bio
-    description: `To leverage my 4+ years of experience in software engineering and my expertise in developing, testing, and maintaining software applications to efficiently contribute to the growth and success of innovative company.`,
+    description: `A seasoned software developer with a strong entrepreneurial spirit. Committed to continuous learning and growth in the ever-evolving field of software development.`,
     // Optional: Github account URL
     github: `https://github.com/pxtha`,
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/pxtha/`,
     // Content of the About Me section
     about: `
-     Proficient in both frontend and backend development. Built a full-stack application single-handedly that attracted over 5,000 users. Previously worked in startups and large corporations, demonstrating versatility in adapting to different work environments. 
-     Experience in a fast-paced startup environment, thriving in situations that require multitasking and problem-solving skills. 
-`,
+     As a software developer, my goal is not just to write code, but to create solutions that make a difference. I am driven by the desire to own a successful product that provides value to its users and stands out in the market. With my strong technical skills, innovative thinking, and entrepreneurial spirit, I am ready to turn this vision into reality.
+    `,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
@@ -64,19 +66,19 @@ module.exports = {
     experience: [
       {
         name: 'CMC Global',
-        description: 'As a Senior Software Engineer, I played a pivotal role in the presale team, supporting the sales team in the technical aspect. I contributed to project planning, task allocation, and progress tracking, resulting in on-time project deliveries and meeting user acquisition targets.',
+        description: 'Played a pivotal role in the presale team, supporting the sales team in the technical aspect.',
         type: 'Senior Software Engineer, Jan 2024 - Present',
         link: 'https://cmcglobal.vn/',
       },
       {
       name: 'Joon',
-      description: 'As a Technical Lead, I successfully led a cross-functional team of 7 members with diverse roles including tester, business analyst, DevOps engineer, and junior developer. From project inception to release, we delivered a high-impact product to a user base of 5,000 individuals.',
+      description: 'Successfully led a cross-functional team of 7 members with diverse roles. From project inception to release, we delivered a high-impact product to a user base of 5,000 individuals.',
       type: 'Technical Lead, Oct 2021 - Present',
       link: 'https://myjoon.app/',
       },
       {
       name: 'Depocket',
-      description: 'As a Blockchain Developer, I championed the end-to-end development of blockchain-based features, spanning from conceptualization through testing.',
+      description: 'End-to-end development of blockchain-based features, spanning from conceptualization through testing.',
       type: 'Blockchain Developer, Oct 2020 to Oct 2021',
       link: 'https://www.depocket.com/',
       }
@@ -84,9 +86,9 @@ module.exports = {
     // Optional: List your skills, they must have `name` and `description`.
     skills: [
       {
-        name: 'Senior Developer',
+        name: 'Full-stack Developer',
         description:
-          'Experienced senior developer with proficiency in multiple tech stacks. In-depth knowledge of modern application development technologies.',
+          'Experienced developer with proficiency in multiple tech stacks. In-depth knowledge of modern application development technologies.',
       },
       {
         name: 'Project Management',

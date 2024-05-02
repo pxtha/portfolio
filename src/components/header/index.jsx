@@ -2,7 +2,8 @@ import { Link } from 'gatsby';
 import get from 'lodash/get';
 import React, { useState, useEffect } from 'react';
 import { FiSun, FiMoon } from 'react-icons/fi';
-import profileImg from '../../images/avatar.gif';
+import profileImg from '../../images/avatar.jpg';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 
 const classes = {
   wrapper: 'block mb-6 md:flex',
@@ -10,7 +11,7 @@ const classes = {
   image: 'rounded-full transform transition-all duration-150 hover:scale-105',
   contentWrapper: 'flex-none pt-6 md:pt-1 md:flex-1 md:pl-20',
   name: 'text-5xl text-gray-900 font-bold leading-tight hover:text-black',
-  description: 'text-gray-800',
+  description: 'text-gray-800 mt-5',
   list: 'mt-6 uppercase tracking-wider',
   item: 'inline list-none pr-4',
   link: 'inline-block py-2 font-semibold text-xs text-gray-800 hover:text-black bold uppercase tracking-wider transition-colors duration-150 ease-in-out',
@@ -19,7 +20,25 @@ const classes = {
   darkModeCheckbox: 'opacity-0 w-0 h-0',
   darkModeSwitchBackground: 'cursor-pointer bg-gray-400 w-8 h-5 rounded-full p-1',
   darkModeSwitchHandle: 'bg-white w-3 h-3 rounded-full shadow-md transform duration-300 ease-in-out',
-  darkModeSwitchHandleChecked: 'translate-x-3'
+  darkModeSwitchHandleChecked: 'translate-x-3',
+  contactWrapper: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    padding: '10px 0',
+  },
+  contactItem: {
+    display: 'flex',
+    alignItems: 'center',
+  },
+  contactIcon: {
+    marginRight: '5px',
+    color: '#333',
+  },
+  contactText: {
+    color: '#333',
+    textDecoration: 'none',
+    fontSize: '0.8rem',
+  },
 };
 
 
@@ -55,12 +74,33 @@ const Header = ({ metadata = {}, noBlog = false }) => {
         <h1 className={classes.name}>
           <Link to="/">{metadata.name}</Link>
         </h1>
+      
+      <div style={classes.contactWrapper}>
+        <div style={classes.contactItem}>
+          <FaEnvelope style={classes.contactIcon} />
+          <a href={`mailto:${metadata.email}`} style={classes.contactText}>
+            {metadata.email}
+          </a>
+        </div>
+        <div style={classes.contactItem}>
+          <FaPhone style={classes.contactIcon} />
+          <a href={`tel:${metadata.phone}`} style={classes.contactText}>
+            {metadata.phone}
+          </a>
+        </div>
+        <div style={classes.contactItem}>
+          <FaMapMarkerAlt style={classes.contactIcon} />
+          <span style={classes.contactText}>{metadata.address}</span>
+        </div>
+      </div>
+
         <p className={classes.description}>{metadata.description}</p>
+  
         <ul className={classes.list}>
           {
             <li className={classes.item}>
              <Link className={classes.link}  to="/">
-                Home
+                About Me
               </Link>
             </li>
           }

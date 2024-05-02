@@ -70,6 +70,9 @@ exports.createSchemaCustomization = ({ actions }) => {
       siteUrl: String
       name: String
       title: String
+      email: String
+      phone: String
+      address: String
       description: String
       author: String
       github: String

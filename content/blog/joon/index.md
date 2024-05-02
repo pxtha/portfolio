@@ -5,7 +5,7 @@ description: 'Our mission is to connect single Muslims looking for a fulfilling 
 color: '#E6EFF6'
 ---
 
-![Joon](./asset.svg)
+![Joon](./joon-4.png)
 
 ## Project Summary
 For more details about the project, please visit the [Joon Page](https://myjoon.app/).
@@ -15,14 +15,14 @@ The Joon project was initiated to address the need for a Muslim marriage app tha
 
 ### Key Features
 
-- User registration and authentication system
-- Messaging and communication between users
-- User profile customization
-- Recommendation system
-- Chat system for users
-- Real-time notifications
-- Admin panel for managing users and content
-- AI auto verification profiles
+- **User registration and authentication system**
+- **Messaging and communication between users**
+- **User profile customization**
+- **Recommendation system**
+- **Chat system for users**
+- **Real-time notifications**
+- **Admin panel for managing users and content**
+- **AI auto verification profiles**
 
 ### Project Team
 
@@ -40,30 +40,25 @@ The team worked collaboratively to design, develop, and deploy the Joon project.
 ## Technologies Used
 
 This project utilizes a variety of technologies to deliver a robust and scalable solution:
-
-#### Front-end:
 - **ReactJS**: Used for building the dashboard and web interfaces, ReactJS allows us to build complex user interfaces from isolated pieces of code called "components".
 - **Flutter**: Used for mobile application development. It's a UI toolkit that allows us to natively compile applications for mobile, web, and desktop from a single codebase.
-
-#### Back-end:
 - **Golang**: The backend service is written in Golang, which provides excellent performance and simplicity.
 - **Python**: For the AI auto verification profiles and recommendation system.
-
-#### Database:
 - **PostgreSQL**: This is our primary relational database, known for its reliability and robustness.
 - **Redis**: Used as an in-memory data structure store, used as a database, cache, and message broker.
 - **Dgraph**: Used for providing recommendation systems, leveraging its graph database capabilities.
-
-#### Others:
 - **Asynq**: This is our message queue of choice, providing reliable asynchronous task processing.
 - **Prometheus**: Used for event monitoring and alerting.
 - **Loki**: Integrated with Prometheus, Loki is used for centralized logging.
 - **Kuma-Uptime**: Used for monitoring the uptime of our services.
 - **Kubernetes (k8s)**: Used for automating deployment, scaling, and management of containerized applications.
 
+![Joon](./joon-2.png)
+
 ### Project Duration
 
 The Joon project was developed over a period of 2 years, starting from March 2020
+
 
 ### Project Outcome
 

@@ -5,11 +5,13 @@ description: 'A resume builder that helps you create and manage professional res
 color: '#E6EFF6'
 ---
 
-![Joon](./asset.svg)
+![Frontend](./image.gif)
 
 ## Project Summary
 
 Magic Resume is a web application designed to simplify the process of creating and managing professional resumes. With a user-friendly interface and a variety of customization options, users can create a professional resume in minutes.
+
+*This project is a forked version of [https://rxresu.me/](https://rxresu.me/). I would like to express my gratitude to the community for their excellent work on this project.*
 
 ### Key Features
 
@@ -22,7 +24,9 @@ Magic Resume is a web application designed to simplify the process of creating a
 - **Realtime Editing**
 - **OpenAI integration**
 
+
 ## Technologies Used
+
 
 Here's a brief overview of the tech stack that's used to build Reactive Resume.
 
