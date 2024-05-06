@@ -171,7 +171,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`, // This color appears on mobile
         display: `minimal-ui`,
-        icon: `src/images/icon.png`,
+        icon: `src/images/avatar2.gif`,
       },
     },
   ],
