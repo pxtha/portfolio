@@ -1,4 +1,7 @@
-DOCKER_IMAGE=porfolio:0.0.1
+DOCKER_IMAGE=porfolio:0.1.1
+
+push: web_build
+	docker push registry.digitalocean.com/pxtha/$(DOCKER_IMAGE)
 
 web_build:
-	BUILD_VERSION=$(BUILD_VERSION) docker compose up -d --build
+	docker build -t registry.digitalocean.com/pxtha/$(DOCKER_IMAGE) .
