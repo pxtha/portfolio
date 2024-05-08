@@ -13,6 +13,22 @@ jobs:
           - name: ssh
             uses: appleboy/ssh-action@v1.0.3
             with:
+              host: 45.1188.132.204
+              username: noormatch
+              key: ${{ secrets.SSH_PRIVATE_KEY_NOORMATCH }}
+              script: |
+                cd backend/portfolio
+                git checkout main
+                git pull
+                make push
+    run:
+        runs-on: ubuntu-latest
+        steps:              
+          - name: Checkout
+            uses: actions/checkout@v2
+          - name: ssh
+            uses: appleboy/ssh-action@v1.0.3
+            with:
               host: 157.230.241.123
               username: root
               key: ${{ secrets.SSH_PRIVATE_KEY }}
@@ -20,4 +36,4 @@ jobs:
                 cd projects/portfolio
                 git checkout main
                 git pull
-                make
+                make run
