@@ -2,10 +2,10 @@ FROM node:14 as dependencies
 
 WORKDIR /app
 
-COPY package.json package-lock.json ./
+COPY package.json ./
 
 # Install dependencies, utilizing cache
-RUN npm install --frozen-lockfile
+RUN npm install
 
 # Stage 2 - Build application
 FROM dependencies as builder
