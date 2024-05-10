@@ -13,7 +13,7 @@ jobs:
           - name: ssh
             uses: appleboy/ssh-action@v1.0.3
             with:
-              host: 45.1188.132.204
+              host: 45.118.132.204
               username: noormatch
               key: ${{ secrets.SSH_PRIVATE_KEY_NOORMATCH }}
               script: |
@@ -22,6 +22,7 @@ jobs:
                 git pull
                 make push
     run:
+        needs: build
         runs-on: ubuntu-latest
         steps:              
           - name: Checkout
