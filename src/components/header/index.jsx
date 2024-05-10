@@ -75,7 +75,7 @@ const Header = ({ metadata = {}, about, noBlog = false }) => {
               </Link>
             </li>
           )}
-          {twitter && (
+          {/* {twitter && (
             <li className={classes.item}>
               <a
                 className={classes.link}
@@ -98,7 +98,7 @@ const Header = ({ metadata = {}, about, noBlog = false }) => {
                 LinkedIn
               </a>
             </li>
-          )}
+          )} */}
         </ul>
       </div>
     </div>
