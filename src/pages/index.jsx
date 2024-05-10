@@ -19,12 +19,12 @@ const Index = ({ data }) => {
     <Layout>
       <SEO />
       <Header metadata={data.site.siteMetadata} about={about}/>
-      <SectionContact metadata={data.site.siteMetadata} />
       {projects && projects.length && <SectionProjects projects={projects} />}
       {skills && skills.length && <SectionSkills skills={skills} />}
       {experience && experience.length && (
         <SectionExperience experience={experience} />
       )}
+      <SectionContact metadata={data.site.siteMetadata} />
     </Layout>
   );
 };

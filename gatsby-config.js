@@ -16,9 +16,7 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/pxtha/`,
     // Content of the About Me section
-    about: `
-     As a software developer, my goal is not just to write code, but to create solutions that make a difference. I am driven by the desire to own a successful product that provides value to its users and stands out in the market. With my strong technical skills, innovative thinking, and entrepreneurial spirit, I am ready to turn this vision into reality.
-    `,
+    about: `As a software developer, my goal is not just to write code, but to create solutions that make a difference. I am driven by the desire to own a successful product that provides value to its users and stands out in the market.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {

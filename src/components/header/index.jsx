@@ -2,18 +2,18 @@ import { Link } from 'gatsby';
 import get from 'lodash/get';
 import React, { useState, useEffect } from 'react';
 import { FiSun, FiMoon } from 'react-icons/fi';
-import profileImg from '../../images/avatar2.gif';
+import profileImg from '../../images/avatar.svg';
 
 const classes = {
   wrapper: 'block mb-6 md:flex',
-  imageWrapper: 'w-full md:w-1/3 md:flex-none md:pr-10',
-  image: 'rounded-full transform transition-all duration-150 hover:scale-105',
+  imageWrapper: 'w-full md:w-1/3 md:flex-none',
+  image: 'w-full h-full rounded-full transform transition-all duration-150 hover:scale-105',
   contentWrapper: 'flex-none pt-6 md:pt-1 md:flex-1 md:pl-20',
   name: 'text-5xl text-gray-900 font-bold leading-tight hover:text-black',
   description: 'text-gray-800 mt-5',
   list: 'mt-6 uppercase tracking-wider',
   item: 'inline list-none pr-4 mr-4 border-r border-gray-300 last:border-r-0',
-  link: 'inline-block py-2 font-semibold text-lg text-gray-800 hover:text-black bold uppercase tracking-wider transition-colors duration-150 ease-in-out',
+  link: 'inline-block py-2 font-semibold text-md text-gray-800 hover:text-black bold uppercase tracking-wider transition-colors duration-150 ease-in-out',
   // move dark mode switch to the right
   darkModeSwitch: 'flex items-center space-x-1 absolute top-0 right-0 mt-2 mr-2 z-10 text-gray-800',
   darkModeCheckbox: 'opacity-0 w-0 h-0',
@@ -26,26 +26,32 @@ const classes = {
 
 const Header = ({ metadata = {}, about, noBlog = false }) => {
   const [darkMode, setDarkMode] = useState(false);
+  const twitter = get(metadata, 'author', false);
+  const github = get(metadata, 'github', false);
+  const linkedin = get(metadata, 'linkedin', false);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
     document.body.classList.toggle('dark-mode');
   };
   
+
+  
   return (
     <div className={classes.wrapper}>
+
       <div className={classes.imageWrapper}>
         <Link to="/">
-          <img className={classes.image} src={profileImg} alt={metadata.name} />
+            <img className={classes.image} src={profileImg} alt={metadata.name} />
         </Link>
-        <div className={classes.darkModeSwitch}>
-            <FiSun />
-              <input type="checkbox" id="darkModeCheckbox" className={classes.darkModeCheckbox} checked={darkMode} onChange={toggleDarkMode} />
-              <label htmlFor="darkModeCheckbox" className={classes.darkModeSwitchBackground}>
-                <div className={`${classes.darkModeSwitchHandle} ${darkMode ? classes.darkModeSwitchHandleChecked : ''}`}></div>
-              </label>
-            <FiMoon />
-        </div>
+      </div>
+      <div className={classes.darkModeSwitch}>
+          <FiSun />
+            <input type="checkbox" id="darkModeCheckbox" className={classes.darkModeCheckbox} checked={darkMode} onChange={toggleDarkMode} />
+            <label htmlFor="darkModeCheckbox" className={classes.darkModeSwitchBackground}>
+              <div className={`${classes.darkModeSwitchHandle} ${darkMode ? classes.darkModeSwitchHandleChecked : ''}`}></div>
+            </label>
+          <FiMoon />
       </div>
       <div className={classes.contentWrapper}>
         <h1 className={classes.name}>
@@ -69,7 +75,7 @@ const Header = ({ metadata = {}, about, noBlog = false }) => {
               </Link>
             </li>
           )}
-          {/* {twitter && (
+          {twitter && (
             <li className={classes.item}>
               <a
                 className={classes.link}
@@ -92,7 +98,7 @@ const Header = ({ metadata = {}, about, noBlog = false }) => {
                 LinkedIn
               </a>
             </li>
-          )} */}
+          )}
         </ul>
       </div>
     </div>

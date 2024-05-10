@@ -9,7 +9,7 @@ const classes = {
   contactWrapper: 'flex-row flex-col sm:flex-row justify-between p-2',
   contactItem: 'flex items-center mb-3',
   contactIcon: 'mr-2',
-  contactText: 'text-sm',
+  contactText: 'text-md',
 };
 
 const SectionContact = ({ metadata = {} }) => {
