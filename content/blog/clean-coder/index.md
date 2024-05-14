@@ -166,3 +166,63 @@ Answer: I say no.
 
 
 ## Saying Yes
+
+#### Language of commitment
+
+Say. Mean. Do.
+
+Lack of commitment:
+
+-  “We need to get this done.” “I need to lose weight.” “Someone 
+should make that happen.”
+- “I hope to get this done by tomorrow.” “I hope we can meet 
+again some day.” “I wish I had time for that.” “I wish this computer was 
+faster.”
+- “Let’s meet sometime.” “Let’s finish this thing.”
+
+Commitment:
+
+- I will .... by < time >
+
+    You’re stating a fact about something YOU will do with a clear end time
+
+    You’re taking full responsibility for something, in front of an audience of at least one person. 
+
+    I will read the book everyday and finish by 15/6 
+
+But you can commit to specific actions that will bring you to your target.
+
+If the end goal depends on someone else, you should commit to specific actions that bring you closer to the end goal.
+
+If you can’t make your commitment, the most important thing is to raise a red flag as soon as possible to whoever you committed to. I there always another plan to able to commit to
+
+If you don’t tell anyone about the potential problem as soon as possible, you’re not giving anyone a chance to help you follow through on your commitment.
+
+#### Learning how to say YES
+
+- use maybe if uncertain
+- ALWAYS commit with discpline: 
+
+    He might be able to get 
+done faster if he doesn’t write his tests. He might be able to get done faster if he 
+doesn’t refactor. He might be able to get done faster if he doesn’t run the full 
+regression suite --> NO, NEVER, 
+
+As a professional, has already made a commitment to maintain these standards.
+
+```
+Peter: “OK, Marge, I’ll tell you what. I’ll call home and clear some overtime with my family. If they are OK with it, then I’ll get this task done by Monday morning. I’ll even come in on Monday 
+morning to make sure everything goes smoothly with Willy. But then I’ll go home and won’t be back until Wednesday. Deal?”
+```
+
+Saying yes but clear of the effort, cost
+
+
+#### Conclusion
+Professionals are not required to say yes to everything that is asked of them. 
+However, they should work hard to find creative ways to make “yes” possible. 
+When professionals say yes, they use the language of commitment so that there 
+is no doubt about what they’ve promised.
+
+
+
