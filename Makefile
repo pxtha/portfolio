@@ -8,4 +8,4 @@ build:
 	docker build -t registry.digitalocean.com/pxtha/$(DOCKER_IMAGE) .
 
 run:
-	BUILD_VERSION=$(BUILD_VERSION) docker compose up -d
+	BUILD_VERSION=$(BUILD_VERSION) docker compose up -d --build
