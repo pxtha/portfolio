@@ -85,10 +85,9 @@ Identify your values
 
 ### Vision & Mission
 
- Tận dụng tiềm năng phát của AI, đưa nhà bán hàng tiếp cận với công nghệ mới một cách dễ dàng nhất, giúp nhà bán hàng tăng doanh thu bằng cách tối ưu trải nghiệm mua sắm của người dùng
-
-
-
+ Tận dụng tiềm năng phát của **AI**, đưa nhà bán hàng tiếp cận với công nghệ mới một cách **dễ dàng nhất**, giúp nhà bán hàng **tăng doanh thu** bằng cách **tối ưu trải nghiệm** mua sắm của người dùng.
 
 ### Culture
+
+
 
