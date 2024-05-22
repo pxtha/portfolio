@@ -9,3 +9,4 @@ build:
 
 run:
 	BUILD_VERSION=$(BUILD_VERSION) docker compose up -d --build
+
