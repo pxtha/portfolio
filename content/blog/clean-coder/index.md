@@ -10,15 +10,12 @@ color: 'rgb(10, 108, 188)'
 
 ## Introduction
 
-In this blog series, I will be documenting my journey of becoming a clean coder. As a developer, I am excited to share my experiences, challenges, and learnings with you. In this first blog post, I will discuss how I am preparing my knowledge to start the project.
+ As a developer, I'm excited to share my experiences, challenges, and learnings with you. In this first blog post, I will discuss how I am preparing my knowledge on how to become a professional developer
 
 ## The story
 
-The idea for becoming a professional coder came to me while I was reading the book Clean Coder by Robert C. Martin. He explains his expectation for a professional programmer on management interactions, time management, pressure, on collaboration, and on the choice of tools to use. The book inspired me to become a better developer 
+The idea for becoming a professional coder came to me while I was reading the book Clean Coder by Robert C. Martin. He explains his expectation for a professional programmer on management interactions, time management, pressure, on collaboration, and on the choice of tools to use. The book inspired me to become a better developer, let's  begin with the concepts
 
-## Where to start
-
-To begin my journey of becoming a professional coder, these are concept i learned from the book:
 ## Professionalism 
 - Greate power comes with greate responsibility, professionalism is all about taking responsibility.
 - How to taking responsibility: 
@@ -27,10 +24,9 @@ To begin my journey of becoming a professional coder, these are concept i learne
 
         I should have taken responsibility early and told Tom that the tests **weren’t complete** and that I was not prepared to ship the software on time. That would have been hard, and Tom would have been upset. But no customers would have lost data, and no service managers would have called.
         
-    - DO NO HARM to the function
+    - DO NO HARM to the function: 0 bug
 
-        **0 bug**
-
+      
         Be responsible for your imperfections
 
         Start with QA find nothing, must know it work 100% (100% test coverage, test all of it, learn Test Driven Development )
@@ -225,4 +221,118 @@ When professionals say yes, they use the language of commitment so that there
 is no doubt about what they’ve promised.
 
 
+## Coding
 
+#### Coding is hard
+
+If you are tired or distracted, do not code. You’ll only wind up redoing what you 
+did. Instead, find a way to eliminate the distractions and settle your mind
+
+#### 3 A.M Code
+
+Don’t write code when you are tired. Dedication and 
+professionalism are more about discipline than hours. Make sure that your sleep, 
+health, and lifestyle are tuned so that you can put in eight good hours per day.
+
+#### Worry Code
+
+Peace your mind before contranting on coding, it is better to spend an hour quieting the personal issues than to use brute force to write code that you’ll just have to throw away later *(or worse, live with).*
+
+#### The Flow Zone
+The Zone is not where you want to be.
+
+Code written in the Zone may come out faster, but you’ll be going back to visit it more.
+
+#### Interruptions
+
+There will be interruptions that distract you and cause you 
+to lose time. 
+
+When they happen, remember that next time you may be the one who needs to interrupt someone else. So the professional attitude is a polite willingness to be helpful
+
+#### Block
+
+Sometime code refuses to appear. Just dont fight it, trying to relax and come later after some amout of time. Or better to fight a pair partner
+
+#### Creative Input
+
+Creative output depends on creative input. Be happy, relax and creative when start thinking to code, that's when best output comes
+
+#### Debugging
+
+Debugging time is just as expensive to the business as coding 
+time is, and therefore anything we can do to avoid or diminish it is good.
+
+Doctors don’t like to reopen patients to fix something they did wrong. Lawyers don’t like to retry cases that they flubbed up. Likewise, a software developer who creates many bugs and needed large debugging time is acting unprofessionally
+
+
+#### Pacing yourself
+
+Know whne to walk away, when you are stuck, when you are tired, disengage for awhile. Pace yourself, and your team. Dont just run as fast as you can
+
+Driving time might solve the problems. There is something about disengagement that allows your mind to hunt for solutions in a different and more creative way.
+
+Sometimes the best way to solve a problem is to go home, eat dinner, watch TV, go to bed, and then wake up the next morning and take a shower
+
+#### Hope
+
+Do not incorporate hope into your estimates!
+
+Do not hope that you can get it all done in ten days! Hope is the project killer. Hope destroys schedules and ruins. Don’t 
+let anyone else have hope.
+
+#### Rushing
+Hold to your original estimates! Do not be tempted to rush. There is no way to rush. So you must answer your boss, your team, and your stakeholders by depriving them of hope.
+
+#### Overtime
+
+Dhould not agree to work overtime unless:
+ 
+(1) you can personally afford it
+
+(2) it is short term, two weeks or less 
+
+(3 - Dealbreaker) your boss has a fall-back plan in case the overtime effort fails
+
+#### False delivery
+
+The worst of all unprofessinal is saying you are done when you know you aren’t
+
+You avoid the problem of false delivery by creating an independent definition of “done.” - have your BA and Tester create automated acceptance tests.
+
+#### Helping others and getting help
+
+We didn’t get into this business because we 
+like people.
+
+You will likely come away having learned more than you gave
+
+Since for many of us collaboration 
+is not an instinct, we require disciplines that drive us to collaborate.
+
+#### Mentoring
+
+It is a matter of professional ethics for senior programmers to spend time taking younger programmers under their wing and mentoring them
+
+## Test Driven Development
+
+But first I need to say this:
+
+- The jury is in!
+
+- The controversy is over.
+
+- **And TDD works.**
+
+
+#### THE THREE RULES: 
+
+1. You are not allowed to write any production code until you have first written a failing unit test.
+
+2. You are not allowed to write more of a unit test than is sufficient to fail—and not compiling is failing.
+
+3. You are not allowed to write more production code that is sufficient to pass the currently failing unit test
+
+#### Practice and master TDD
+
+How to

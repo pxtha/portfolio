@@ -7,7 +7,7 @@
   .blog-content {
     @apply text-gray-800;
     @apply max-w-screen-md;
-  
+    @apply text-lg;
   } 
 
   .blog-content a {
