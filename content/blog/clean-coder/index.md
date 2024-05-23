@@ -327,12 +327,62 @@ But first I need to say this:
 
 #### THE THREE RULES: 
 
+Learn the skill externally - will take months
+
 1. You are not allowed to write any production code until you have first written a failing unit test.
 
 2. You are not allowed to write more of a unit test than is sufficient to fail—and not compiling is failing.
 
 3. You are not allowed to write more production code that is sufficient to pass the currently failing unit test
 
+*Note*:
+- If you found the solution for the production code is wrong, dont just fix the production code, write another unit test to prove that solution is wrong
+
+- Dont rush for the goal, trying to cover all the case around the final case
+
+- Avoid testing implementaion details, test behaviors
+
+- Write a test -> Make it compile -> Run it to see that it fails -> Make it run -> Remove duplication
+
+- Just make it run and pass, being sinful, write sinful code
+
+- Refactoring step is when we preoduce clean code
+
+- Do not write new unit test when you refactoring code
+
+- Avoid heavyly mocking
+
+- Test behavios not implementation
+
+- Dont test internals
+
+- Sometimes unit test only for you understand what are you doing, after that, delete that test after to avoid burden for ohters
+
+- TTD pattern is to ensure us to able to refactoring the code, make our code be more clean are professional, but if we have the wrong implementation of TDD, making too much unit test with too many dependencies/mocking/coupling that would prevent us from refactoring. What happend when you refactoring the got 300 failed test cases? You will **Ctrl-Z**!
+
+
+- Developers write developer tests; not unit test (unit test have a different definition with what are we doing with TDD)
+
+- Refactoring: change internal structure without changing it observable behavior.
+
+- TTD is contract first; that means you should only test what your code exposes to other callers. So that you can change your code's detail implementation without changing the test
+
+- Test should be coupled to the behavior of code and decoupled from the structure code. So best scenerio is that when refactoring code, should not any test changing for failed.
+
+- Avoid as much mock as in a test
+
+- Call it's Developer Test instead of Unit Test
+
+- TTD is all about slowly discovery the solution, dont step too fast, the failure of a test case implicates only the developer's most recent edit.
+
+- Mocks, avoid mock when develop the solution.
+
+- write TTD == implementing the requirement
+
+- DO NOT write new tests if you introduce new methods when refactoring to clean code
+
+- Writing developer test, implement TTD in a way that it is very importance that even stake holder able to understand or they can have a look a belevie that behavior is working correctly
+
 #### Practice and master TDD
 
-How to
+How to:
