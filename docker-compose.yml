@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   porfolio:
-    image: "registry.digitalocean.com/pxtha/porfolio"
+    image: registry.digitalocean.com/pxtha/porfolio
     container_name: porfolio
     ports:
       - "8999:80"
