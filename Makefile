@@ -1,5 +1,5 @@
 BUILD_VERSION=$(shell cat VERSION)
-DOCKER_IMAGE=porfolio:$(BUILD_VERSION)
+DOCKER_IMAGE=porfolio:latest
 
 push: build
 	docker push registry.digitalocean.com/pxtha/$(DOCKER_IMAGE)
@@ -7,5 +7,8 @@ push: build
 build:
 	docker build -t registry.digitalocean.com/pxtha/$(DOCKER_IMAGE) .
 
-run:
-	BUILD_VERSION=$(BUILD_VERSION) docker compose up -d --build
+pull:
+	BUILD_VERSION=$(BUILD_VERSION) docker compose pull 
+
+run: pull
+	BUILD_VERSION=$(BUILD_VERSION) docker compose up -d --build --force-recreate
