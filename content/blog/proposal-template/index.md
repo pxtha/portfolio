@@ -4,7 +4,7 @@ date: '2024-29-05T12:00:00.00Z'
 description: 'My proposal template for upwork'
 color: 'rgb(10, 108, 188)'
 ---
-![Frontend](./giphy.webp)
+![Frontend](./original-prject.gif)
 
 ## How to write a proposal in upwork
 
@@ -55,5 +55,4 @@ Here are two projects that I have worked on and may related to what you need:
 ### Contact
 
 You can reach me at [web](https://pxtha.com/)
-```
 
