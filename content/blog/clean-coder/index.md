@@ -381,8 +381,91 @@ Learn the skill externally - will take months
 
 - DO NOT write new tests if you introduce new methods when refactoring to clean code
 
-- Writing developer test, implement TTD in a way that it is very importance that even stake holder able to understand or they can have a look a belevie that behavior is working correctly
+- Writing developer test, implement TTD in a way that it is very importance that even stake holder able to understand or they can have a look a belevie that behavior is working correctly.
 
-#### Practice and master TDD
 
-How to:
+## 7. Acceptance Testing: **Given ____ when ____ then**
+
+
+
+#### Premature Precision
+
+- Business people want to know exactly what they are going to get before 
+they authorize a project.
+- Developers want to know exactly what they are supposed 
+to deliver before they estimate the project
+- **precision** that simply **cannot be achieved**
+
+
+#### The Uncertainty Principle
+- In the end, the more precise you make your requirements, the less relevant they become as the system is implemented.
+
+#### Estimation Anxiety
+
+- **Estimation is estimation**
+- Professional developers understand that estimates can, and should, be made based on low precision requirements, and recognize that those estimates are estimates
+
+The solution to **premature precision** is to defer precision as long as possible. Professional developers don’t flesh out a requirement until they are just about to develop it.
+
+#### The definition of "Done"
+- The purpose of acceptance tests is communication, clarity, and precision. 
+- Professional developers make it their responsibility to work with 
+stakeholders and testers to ensure that all parties know what is about to be built.
+
+#### Automation
+- Acceptance tests should always be automated. 
+- The cost of **automating acceptance** tests is so small in comparison to the cost of executing **manual test** plans that it makes no economic sense to write scripts for humans to execute
+
+#### Who writes acceptance test, and when?
+
+- Following the principle of *“late precision”* acceptance tests should be written as late as possible, typically a few days before the feature is implemented. 
+
+- In Agile projects, the tests are written after the features have been selected for the next Iteration or Sprint
+
+- The first few acceptance tests should be ready by the first day of the iteration. More should be completed each day until the midpoint of the iteration when all of them should be ready. If all the acceptance tests aren’t ready by the midpoint of the iteration, then some developers will have to pitch in to finish them off.
+
+#### The developer role
+- The point of all this is that it is the developer’s job to connect the acceptance tests to the system, and then to make those tests pass.
+
+#### Test negotiation and passive aggresion
+- As a professional developer, it is your job to negotiate with the test author for a better test
+
+#### Acceptenact test vs unit test
+- Their primary purpose is to formally document the design, structure, and behavior of the system. 
+
+- *Unit tests are written by programmers for programmers.*
+- *Acceptance tests are written by the business for the business*
+
+#### Testing through the Right Interface
+- Keep the GUI tests to a minimum.
+- Test API instead of GUI
+
+#### CI/CD
+- Make sure unit tests and acceptance tests are run several times per 
+day
+
+### CONCLUSION
+Communication about details is hard. It is too easy for each party to wave their hands and assume that the other party understands. 
+
+To effectively eliminate communication errors between programmers and stakeholders is to write **automated acceptance tests**. 
+
+They are completely unambiguous, and they cannot get out of sync with the application. They are the perfect requirements document.
+
+## 8. Testing Strategies
+
+![test](./test-strategy-1.png)
+
+What every professional development team needs is a good **testing strategy**
+
+#### Unit test
+These tests are written by 
+programmers, for programmers, in the programming language of the system.
+
+**Test Doubles:**
+- Dummies: have no functionality and that we don’t want people to use
+- Stubs: just create a stub implementation that returns only one value
+- Spies: a stub that keeps track of how many times the function was call.
+- Mocks: 
+- Fakes: truly have an implementation, implementations that look like the real thing. But they only do the trick in the scope of the test.
+
+#### Component test
