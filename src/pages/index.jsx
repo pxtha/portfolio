@@ -4,10 +4,10 @@ import React from 'react';
 
 import Header from '../components/header';
 import Layout from '../components/layout';
-import SectionContact from '../components/section-contact';
 import SectionExperience from '../components/section-experience';
 import SectionProjects from '../components/section-projects';
 import SectionSkills from '../components/section-skills';
+import SectionAbout from '../components/section-about';
 import SEO from '../components/seo';
 
 const Index = ({ data }) => {
@@ -18,13 +18,13 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <SEO />
-      <Header metadata={data.site.siteMetadata} about={about}/>
+      <Header metadata={data.site.siteMetadata}/>
+      {about && <SectionAbout about={about} />}
       {projects && projects.length && <SectionProjects projects={projects} />}
       {skills && skills.length && <SectionSkills skills={skills} />}
       {experience && experience.length && (
         <SectionExperience experience={experience} />
       )}
-      <SectionContact metadata={data.site.siteMetadata} />
     </Layout>
   );
 };

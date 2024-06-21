@@ -1,14 +1,8 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 
 import Section from '../section';
 import SummaryItem from '../summary-item';
 
-const pageTransition = {
-  initial: { opacity: 0 },
-  enter: { opacity: 1, transition: { duration: 1, delay: 0.1 } },
-  exit: { opacity: 0, transition: { duration: 1 } },
-};
 const BlogPosts = ({ posts }) => {
   return (
     <Section title="All Blog Posts">

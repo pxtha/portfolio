@@ -1,8 +1,8 @@
 import { Link } from 'gatsby';
-import get from 'lodash/get';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { FiSun, FiMoon } from 'react-icons/fi';
 import profileImg from '../../images/avatar.svg';
+import SectionContact from '../../components/section-contact';
 
 const classes = {
   wrapper: 'block mb-6 md:flex',
@@ -24,11 +24,8 @@ const classes = {
 
 
 
-const Header = ({ metadata = {}, about, noBlog = false }) => {
+const Header = ({ metadata = {}, noBlog = false }) => {
   const [darkMode, setDarkMode] = useState(false);
-  const twitter = get(metadata, 'author', false);
-  const github = get(metadata, 'github', false);
-  const linkedin = get(metadata, 'linkedin', false);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -39,7 +36,6 @@ const Header = ({ metadata = {}, about, noBlog = false }) => {
   
   return (
     <div className={classes.wrapper}>
-
       <div className={classes.imageWrapper}>
         <Link to="/">
             <img className={classes.image} src={profileImg} alt={metadata.name} />
@@ -57,9 +53,7 @@ const Header = ({ metadata = {}, about, noBlog = false }) => {
         <h1 className={classes.name}>
           <Link to="/">{metadata.name}</Link>
         </h1>
-      
-        <p className={classes.description}>{about}</p>
-  
+        <SectionContact metadata={metadata} />
         <ul className={classes.list}>
           {
             <li className={classes.item}>

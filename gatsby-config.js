@@ -16,7 +16,11 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/pxtha/`,
     // Content of the About Me section
-    about: `As a software developer, my goal is not just to write code, but to create solutions that make a difference. I am driven by the desire to own a successful product that provides value to its users and stands out in the market.`,
+    about: `As a **Full-Stack Developer** with **4 years** of experience specializing in **Golang**, I have a proven track record of creating efficient, reliable software with a strong emphasis on clean, testable code. 
+   
+    My expertise extends to DevOps practices, I've worked extensively with **Kubernetes** and successfully implemented **CI/CD pipelines** using **GitLabCI**. Additionally, I'm well-versed in various cloud platforms and possess a solid understanding of databases such as **PostgreSQL** and **Dgraph**. On the frontend, I'm proficient with **ReactJS**. 
+    
+    In leadership roles, I've honed my communication and coordination skills, always prioritizing a **customer-centric** approach.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
@@ -69,8 +73,8 @@ module.exports = {
         link: 'https://cmcglobal.vn/',
       },
       {
-      name: 'Joon',
-      description: 'Successfully led a cross-functional team of 7 members with diverse roles. From project inception to release, we delivered a high-impact product to a user base of 5,000 individuals.',
+      name: 'JoonTech',
+      description: 'Successfully led a cross-functional team of 7 members with diverse roles. From project inception to release, we delivered a high-impact product to a user base of 10,000 individuals.',
       type: 'Technical Lead, Oct 2021 - Present',
       link: 'https://myjoon.app/',
       },
@@ -83,11 +87,6 @@ module.exports = {
     ],
     // Optional: List your skills, they must have `name` and `description`.
     skills: [
-      {
-        name: 'Full-stack Developer',
-        description:
-          'Experienced developer with proficiency in multiple tech stacks. In-depth knowledge of modern application development technologies.',
-      },
       {
         name: 'Project Management',
         description:
