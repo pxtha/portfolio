@@ -83,11 +83,19 @@ Identify your values
 
 # ShopTalk AI
 
-### Vision & Mission
+### Vision
 
- Tận dụng tiềm năng phát của **AI**, đưa nhà bán hàng tiếp cận với công nghệ mới một cách **dễ dàng nhất**, giúp nhà bán hàng **tăng doanh thu** bằng cách **tối ưu trải nghiệm** mua sắm của người dùng.
+Help businesses to increase their sales by providing a personalized shopping experience to their customers.
+
+### Mission
+
+Our mission is to make shopping a joy with our AI chatbot that easily leads customers to their perfect products, making buying a snap. 
+
+We're also passionate about helping Vietnamese businesses tap into the latest technology in a way that's affordable, easy, and quick.
 
 ### Culture
+
+Professionalism
 
 
 
