@@ -45,3 +45,61 @@ Use this data to provide up-to-date recommendations and insights to customers.
 
 ## System design for ShopTalk AI
 
+![Frontend](./shoptalkai.drawio.svg)
+
+### Dashboard
+- This is where Seller manage their shoptalk instance
+- View insights on customer preferences and buying habits
+- View recommendations for customers
+- Manage product data
+- Manage endpoints
+- Manage users
+
+#### Products
+- Sync data from their e-commerce platforms like Shopee, update product information, and view insights on customer preferences and buying habits.
+
+#### Endpoints
+- Manage endpoints for different platforms like Facebook Messenger, WhatsApp, Zalo, and websites.
+
+### Shoptalks
+- This is where customers interact with the Chatbot
+- Get product recommendations
+- Get insights on the best deals and discounts available
+- Simple flow goes like: 
+    - Customer asks for a product recommendation: what should I wear for my next vacation in next week in Da Nang?
+    - Chatbot asks for customer preferences: what's your gender? what's your style? what's your size? what's your budget? what's your favorite color?
+    - Chatbot provides product recommendations: 
+    - Chatbot provides links to buy products
+
+## Feature list for MVP
+
+### Dashboard
+- Seller register and login
+- Seller manage their shoptalk instance:
+  - Manage product data: 
+    - sync product data from shopee: authen shopee account, sync product data
+    - add product manually
+    - update product information: tagging
+    - delete product
+  - Manage endpoints: what is this? research more 
+    - add endpoint
+    - update endpoint
+    - delete endpoint
+    - integrate with Facebook Messenger 
+- Seller manage users: 
+  - view user list
+  - view user conversation history
+  - view user insights: 
+    - user basic information get from conversation: name, age, gender, location,
+    - user needs of products: what they are looking for, what they like, what they dislike
+    - user feedback recommendations: what product recommended to them, did they happy with that
+    
+### Shoptalks
+- Customer interact with the Chatbot
+  - Send message to chatbot
+  - Answer chatbot questions
+  - Get product recommendations
+  - Click to view products, add products to cart, buy products
+
+## Wireframe for MVP
+

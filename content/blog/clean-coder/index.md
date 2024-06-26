@@ -469,3 +469,9 @@ programmers, for programmers, in the programming language of the system.
 - Fakes: truly have an implementation, implementations that look like the real thing. But they only do the trick in the scope of the test.
 
 #### Component test
+No mocking! It's all real.
+https://quii.gitbook.io/learn-go-with-tests/testing-fundamentals/scaling-acceptance-tests
+https://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests
+
+- Define what the system should do, not how it works
+- 
