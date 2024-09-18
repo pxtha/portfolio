@@ -32,8 +32,6 @@ const Header = ({ metadata = {}, noBlog = false }) => {
     document.body.classList.toggle('dark-mode');
   };
   
-
-  
   return (
     <div className={classes.wrapper}>
       <div className={classes.imageWrapper}>
