@@ -5,22 +5,31 @@ on:
     branches: [ main ]
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-          - name: Checkout
-            uses: actions/checkout@v2
-          - name: ssh
-            uses: appleboy/ssh-action@v1.0.3
-            with:
-              host: 45.118.132.204
-              username: noormatch
-              key: ${{ secrets.SSH_PRIVATE_KEY_NOORMATCH }}
-              script: |
-                cd backend/portfolio
-                git checkout main
-                git pull
-                make push
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Install doctl
+        uses: digitalocean/action-doctl@v2
+        with:
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+
+      - name: Log in to DigitalOcean Container Registry
+        run: doctl registry login
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: registry.digitalocean.com/pxtha/wsss-app:latest
+
     run:
         needs: build
         runs-on: ubuntu-latest
@@ -30,11 +39,11 @@ jobs:
           - name: ssh
             uses: appleboy/ssh-action@v1.0.3
             with:
-              host: 157.230.241.123
+              host: 206.189.34.245
               username: root
               key: ${{ secrets.SSH_PRIVATE_KEY }}
               script: |
-                cd projects/portfolio
+                cd frontend/portfolio
                 git checkout main
                 git pull
                 make run
