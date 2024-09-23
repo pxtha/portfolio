@@ -37,5 +37,28 @@ Microservices;
 - Cons:
   - Need skilled architect
   
+#### 3. Sharding
 
+- Sharding: horizontal partitioning of data according to a shard key.
+- Types of sharding architectures:
+  - Range base sharding
+  - Key base sharding / hash-based sharding
+  - directory base sharding: the lookup maps each key to the shard, the lookup is a single point of failure
 
+- Hierarchal Sharding
+  - Do sharding on the large shard
+![alt text](image-2.png)
+
+#### 4. Single Point of failure
+To mitigate the problem:
+- use multiple instances of every component in the service
+- add backup the switch to over failure
+- have multiple regions
+
+#### 5. Service discovery and heartbeats
+-  heartbeat service can be used to maintain system state,  when a server crashes, the heartbeat service indentify and restart the service imeediately
+- Service Discovery is another important part of deploying and maintaining systems. The load balancer is able to adapt request routing.
+
+In summary, service discovery helps services find each other, while heartbeat mechanisms ensure that services are running and healthy.
+
+Both features allow the system to report and heal issues efficiently.
