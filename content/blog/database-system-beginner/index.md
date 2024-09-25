@@ -118,4 +118,36 @@ color: 'rgb(10, 108, 188)'
 - **RANK**: Assigns a unique rank to each row within the partition of a result set. 
 - **ROW_NUMBER**: Assigns a unique sequential integer to each row within the partition of a result set.
   -     SELECT ROW_NUMBER() OVER (PARTITION BY cid ORDER BY gpa DESC) AS row_num, * FROM enrolled;
-    
+  -     SELECT *
+          FROM (select name,
+        height,
+        country,
+        address,
+        created_at,
+        RANK() OVER (partition by country order by height desc) as height_rank
+        FROM "user"
+        WHERE status = 'pending') as ranking
+        WHERE ranking.height_rank = 2
+
+#### Nested Queries
+- Invoking a query within another query
+- Outer query: The query that contains the nested query
+- Inner query: The query that is nested inside the outer query
+- Nested queries can choke the performance of a database system, so use them judiciously. Better to use JOINs
+
+
+#### LATERAL JOIN
+- A lateral join is a join that allows you to reference columns from the left table in the right table
+      
+        SELECT * FROM course c, 
+          LATERAL (SELECT COUNT(*) as total_enrolled from enrolled e where e.cid = c.cid) as t1
+          LATERAL (SELCT AVG(GPA) as avg_gpa from st where st.cid = c.cid) as t2;
+
+#### Common Table Expressions (CTE)
+- A CTE is a temporary result set that you can reference within a SELECT, INSERT, UPDATE, or DELETE statement.
+- Alternative to nested queries, views and explicit temporary tables
+
+        WITH cte AS (
+          SELECT * FROM student
+        )
+        SELECT * FROM cte WHERE login LIKE '%@cs';
