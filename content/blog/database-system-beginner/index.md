@@ -126,8 +126,7 @@ color: 'rgb(10, 108, 188)'
             ) as rank_table
             where rank_table.rank = 2
 
-
- 
+  
 
 #### Nested Queries
 - Invoking a query within another query
