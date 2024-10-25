@@ -7,6 +7,7 @@
 
 select * from tokyo_medals
 
+
 -- paris olympics
 select * from (
                   select
@@ -24,6 +25,10 @@ select * from (
                   order by count(winner_code) - coalesce(tm.gold_medal,0) desc limit 5
                 ) as top5_improvement,
 LATERAL (
-    select * from teams t
+            select t.code, t.country_code
+    from teams t
+             join athletes a on a.code = t.athletes_code
     where t.country_code = top5_improvement.country
+    group by t.code, t.country_code
+    having count(distinct a.gender) = 1 and min(a.gender) = 1
 ) as a
