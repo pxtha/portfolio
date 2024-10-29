@@ -1,4 +1,4 @@
-FROM node:16 as dependencies
+FROM node:14.21.3 as dependencies
 
 WORKDIR /app
 
