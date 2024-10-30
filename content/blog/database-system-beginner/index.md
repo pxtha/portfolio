@@ -157,3 +157,84 @@ color: 'rgb(10, 108, 188)'
           SELECT * FROM student
         )
         SELECT * FROM cte WHERE login LIKE '%@cs';
+
+## Database Storage: Files & Pages
+![](./img_4.png)
+
+### Disk-based Architecture
+
+![img_8.png](img_8.png)
+- The DBMS assumes that the primary storage location of the database is on non-volatile disk
+- The DBMS's components manage the movement of data between non-volatile disk and volatile storage (RAM)
+- Volatile storage: RAM
+  - Random Access Memory (RAM) is volatile storage
+  - Data is lost when the power is turned off
+  - Byte-addressable: Each byte of memory has a unique address, allowing for fast access
+- Non-valatile storage: Disk
+  - Disk storage is non-volatile: SSD, HDD, Network Storage
+  - Data is retained when the power is turned off
+  - Block-addressable: Data is stored in blocks, each block has a unique address, have to read the entire block to access the data
+  - Slower than RAM
+
+### Latency Numbers Every Programmer Should Know
+![img_7.png](img_7.png)
+
+Covert to human readable format: 
+- **L1 cache reference**: 1 sec
+- **L2 cache reference**: 4 sec
+- **DRAM memory reference**: 100 sec
+- **SSD storage**: 4.4 hours
+- **HDD storage**: 3.3 weeks
+- **Network**: 1.5 years
+- **Tape Archives**: 31.7 years
+
+What is CPU L1 and L2 cache?
+  - The CPU has L1 and L2 cache to store frequently accessed data and instructions
+  - The CPU can access data and instructions from the cache faster than from RAM
+
+### Sequential vs Random Access
+- Random access: Accessing data at an arbitrary location, until the data is found
+- Sequential access: Accessing data in a linear order, from the beginning to the end, must faster
+
+- Random access on non-volatile storage is slower than sequential access
+- DBMS will want to maximize sequential access and minimize random access
+  - Algo tru to reduce number of write to random pages sp that data is stored in contiguous blocks
+  - Allocating multiple pages at the same time is called an extent.
+
+### System Desigm Goals
+- Allow the DBMS to manage databases that exceed the amount of memory available
+- Reading/writing data to disk is expensive, so it must be managed carefully to avoid large stalls (panic) and performance degradation
+- Random access is slow, so the DBMS will try to maximize sequential access
+- ![img_9.png](img_9.png)
+
+
+#### Lecture 3: How the DBMS represent the database in files on disk
+##### File storage: 
+- The DBMS stores a database as one or more FILES on disk
+- Each database files is in a specific format, with a specific structure, only the that DBMS can understand (mysql can only read mysql files)
+- The OS does not know anything about the contents of these files, only the DBMS does
+##### Storage manager:
+- The storage manager is responsible for maintaining the database files on disk
+- It's organized files as a collection of PAGES
+- Does not maintain multiple copies of a page on disk
+##### Database Page:
+- A page is a fixed-size block of data
+  - IT can contain tuples, medadata, indexes, logs
+  - do not mix page types in a single page
+  - page is a self-contained: everything needed to manage the data in the page is in the page, this is essential for **crash recovery.**
+- Each page has a unique page ID
+  - the dbms uses an indirection layer to map page IDs to physical locations on disk
+- There are 3 different notions of "pages" in DBMS:
+  - Hardware page: is the largest block of data that the storage device can guarantee failsafe wires (4kb)
+  - OS page: (4kb, x64 2MB/1GB)
+  - Database page: on top of OS page, and on top of hardware page (512B-32KB), DBMSs that specialize in read-only workloads may use larger pages to reduce the overhead of managing pages
+
+#### Learning C++ to finish projects
+  - How C++ works:
+    - C++ is a high-level language: it is closer to human language than machine language
+    - C++ is a statically typed: the type of a variable is known at compile time; 
+    - C++ is a compiled language: the code is compiled into machine code before it is run; using a compiler like g++ or clang++
+  - What C++ good at?
+    - C++ excels in situations where high performance and precise control over memory and other resources is needed
+    - video games, real-time systems, financial app, embedded systems, and more
+Introduction to C++ development
