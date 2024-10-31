@@ -40,11 +40,11 @@ jobs:
       - name: SSH and deploy
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: 206.189.34.245
+          host: 165.22.243.40
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd frontend/portfolio
+            cd portfolio
             git checkout main
             git pull
             make run
