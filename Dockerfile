@@ -2,7 +2,8 @@ FROM node:14.21.3 as dependencies
 
 WORKDIR /app
 
-COPY package.json ./
+COPY package.json package-lock.json ./
+RUN npm install
 
 # Install dependencies, utilizing cache
 RUN npm install
