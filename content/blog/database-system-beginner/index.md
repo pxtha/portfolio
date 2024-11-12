@@ -229,12 +229,3 @@ What is CPU L1 and L2 cache?
   - OS page: (4kb, x64 2MB/1GB)
   - Database page: on top of OS page, and on top of hardware page (512B-32KB), DBMSs that specialize in read-only workloads may use larger pages to reduce the overhead of managing pages
 
-#### Learning C++ to finish projects
-  - How C++ works:
-    - C++ is a high-level language: it is closer to human language than machine language
-    - C++ is a statically typed: the type of a variable is known at compile time; 
-    - C++ is a compiled language: the code is compiled into machine code before it is run; using a compiler like g++ or clang++
-  - What C++ good at?
-    - C++ excels in situations where high performance and precise control over memory and other resources is needed
-    - video games, real-time systems, financial app, embedded systems, and more
-Introduction to C++ development
