@@ -47,16 +47,16 @@ Each round will focus on the relevant skills outlined in the job description and
 This round focuses on problem-solving, coding proficiency, and algorithmic thinking. You’ll work on a live coding exercise using a codeshare link provided by the interviewer.
 
 ### Coding Questions:
-1. **K-th Largest Element in an Array**
+**K-th Largest Element in an Array**
   - **Prompt**: Given an unsorted array, find the K-th largest element.
   - **Approach**: Mention using a min-heap (binary heap) of size K. Explain why this approach is efficient (O(N log K) complexity).
   - **Follow-up**: Discuss potential edge cases and optimizations.
 
-2. **Two Sum**
+**Two Sum**
   - **Prompt**: Given an array of integers `nums` and an integer `target`, return the indices of the two numbers that add up to `target`.
   - **Approach**: Start with a hash map solution for O(N) time complexity.
 
-3. **Find Middle of a Linked List**
+**Find Middle of a Linked List**
   - **Prompt**: Given a singly linked list, find its middle node. If the list has an even number of nodes, return the second middle node.
   - **Approach**: Use the two-pointer technique for optimal O(N) time complexity.
 
@@ -70,7 +70,7 @@ This round focuses on problem-solving, coding proficiency, and algorithmic think
 This round evaluates your understanding of system design, scalability, and handling edge cases. It will include high-level design questions and potentially require designing on a virtual whiteboard or document.
 
 ### Questions:
-1. **Design a Payment System**
+**Design a Payment System**
   - **Objective**: Design a payment flow that can handle multiple transactions simultaneously.
   - **Considerations**:
     - **Scalability**: How would you handle a high volume of concurrent transactions?
@@ -79,7 +79,7 @@ This round evaluates your understanding of system design, scalability, and handl
     - **Logging & Monitoring**: How would you set up alerts and logs for real-time issues?
     - **Tech Stack**: Consider using microservices, queues, and database transactions. Mention using cloud services like AWS for scalability.
 
-2. **Rate Limiter Design**
+**Rate Limiter Design**
   - **Objective**: Design a rate-limiting mechanism to prevent abuse of an API.
   - **Data Structures**: You could use a hash map with sliding window counters or a leaky bucket algorithm.
   - **Considerations**:
@@ -171,7 +171,8 @@ My normal simple solution for this:
     - Right child at index 2i + 2
   - Child node at index i:
     - Parent node at index (i - 1) / 2
-    - 
+    
+
 ```go
 package main
 
