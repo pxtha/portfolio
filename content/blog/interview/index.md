@@ -5,36 +5,14 @@ description: 'I will be more confident after this!'
 color: 'rgb(10, 108, 188)'
 ---
 
-![prepare.png](prepare.png)
-
-# Job Description
-**Key Responsibilities:**
-- **Backend Development:** Develop, maintain, and optimize server-side applications and APIs using Golang.
-- **Fullstack Integration:** Seamlessly integrate frontend and backend components, ensuring cohesive application functionality.
-- **Code Quality:** Write clean, maintainable, and well-documented code. Perform code reviews and participate in continuous improvement processes.
-- **Testing:** Implement unit tests, integration tests, and end-to-end tests to ensure application reliability and performance.
-- **Experience:** 5+ years of professional experience in software development.
-- **Backend Expertise:** Solid experience with Golang, including building RESTful APIs and microservices.
-- **Database Management:** Experience with SQL and NoSQL databases such as PostgreSQL, MySQL, MongoDB, etc.
-- **Version Control:** Proficiency with Git and Git workflows.
-- **Testing:** Knowledge of testing frameworks and tools for both frontend and backend (e.g., Jest, Mocha, Postman).
-- **DevOps Knowledge:** Familiarity with CI/CD pipelines, Docker, and Kubernetes is a plus.
-- **Cloud Platforms:** Experience with cloud services such as AWS, GCP, or Azure.
-- **Agile Experience:** Comfortable working in Agile environments, using tools like JIRA or Trello.
-
-**Preferred Qualifications:**
-- **Performance Optimization:** Skills in optimizing applications for speed and scalability.
-- **Security Awareness:** Understanding of web application security best practices.
-- **Open Source Contributions:** Active participation in the open-source community is a plus.
+![professional.gif](professional.gif)
 
 # Resume
-
 My resume is available for download:
 [Golang_Pham_Xuan_Thang.pdf](CMCGlobal_Golang_Pham_Xuan_Thang.pdf)
 
 
 # Interview Preparation
-
 To help you prepare for the interview based on the job description and your feedback on the interview process, I’ll structure a simulated interview with three rounds:
 1. Technical Coding Round
 2. System Design & Architecture
@@ -127,7 +105,7 @@ This round focuses on your past experience, problem-solving approaches, and fit 
 - **Brush up on Golang fundamentals and cloud infrastructure like AWS/GCP.
 
 # Script for Mock Interview
-
+![469164629000201.gif](469164629000201.gif)
 ## Introduction
 
 > **Interviewer**: Can you please introduce yourself and give us a brief overview of your professional background?
@@ -146,31 +124,6 @@ This round focuses on your past experience, problem-solving approaches, and fit 
 >
 > **You:**
 > "To solve this problem, I would use a min-heap of size K. This approach is efficient with a time complexity of O(N log K). Here is a sample implementation in Golang:"
-
-My normal simple solution for this:
-1. Sort the array in descending order
-2. Get the K-th element from the sorted array. 1st -> index 0, 2nd -> index 1, ..., K-th -> index K-1
-
-#### Need to understand how to calculate the time complexity of the solution.
-#### Understand heaps data structure:
-- Power of heap:
-  - Find the smallest/largest element in O(1) time
-  - Insert an element in O(log N) time
-  - Remove the smallest/largest element in O(log N) time
-  - Search for an element in O(N) time
-- Concept of Heap:
-  - Tree-based data structure
-  - A heap is a complete binary tree
-  - Two types of heaps: min-heap and max-heap
-    - In a min-heap, the parent node is smaller than its children
-    - In a max-heap, the parent node is larger than its children
-- Representing a heap:
-  - Array-based representation
-  - Parent node at index i:
-    - Left child at index 2i + 1
-    - Right child at index 2i + 2
-  - Child node at index i:
-    - Parent node at index (i - 1) / 2
     
 
 ```go
@@ -365,4 +318,81 @@ func main() {
 > **You:**
 > "I ensure code quality by conducting code reviews, following coding standards, and using static code analysis tools. I also encourage the team to write tests and document their code."
 
+## My Note 
+![illuai.png](illuai.png)
 
+### Coding Questions
+#### Need to understand how to calculate the time complexity of the solution.
+![img_1.png](img_1.png)
+- Time complexity: 
+  - Time complexity is a measure of the amount of time an algorithm takes to run as a function of the length of the input.
+  - It describes the number of operations an algorithm performs to complete its task.
+  - It is usually expressed using Big O notation.
+
+- Space complexity: 
+  - Space complexity is a measure of the amount of memory an algorithm uses as a function of the length of the input.
+  - It describes the amount of memory required by the algorithm to complete its task.
+  - It is also expressed using Big O notation.
+  
+
+## Understand different data structure:
+
+### Linked List:
+- Pros: Dynamic size, efficient insertions and deletions
+
+### Hash Map:
+- Pros: Fast lookups, key-value storage
+
+### Heap:
+- Pros: Efficiently find the smallest/largest element, priority queue operations
+
+- Cons: Slower insertions and deletions compared to arrays 
+
+- Power of heap:
+  - Find the smallest/largest element in O(1) time
+  - Insert an element in O(log N) time
+  - Remove the smallest/largest element in O(log N) time
+  - Search for an element in O(N) time
+![img.png](img.png)
+- Concept of Heap:
+  - Tree-based data structure
+  - A heap is a complete binary tree (completely filled except possibly for the bottom level, which is filled from left to right)
+  - Two types of heaps: min-heap and max-heap
+      - In a min-heap, the parent node is smaller than its children
+      - In a max-heap, the parent node is larger than its children
+
+- Representing a heap:
+  - Array-based representation
+  - Parent node at index <code>i</code>:
+    - Left child at index <code>2i + 1</code>
+    - Right child at index <code>2i + 2</code>
+  - Child node at index <code>i</code>:
+    - Parent node at index <code>(i - 1) / 2</code>
+  - Height of a heap <code>h = log N</code>
+  - Max node at height <code>h = 2^h</code>
+  - Max node in a heap of height <code>2^{(h+1)} - 1</code> = max size array
+  - Range of leaves in a heap: <code>N / 2</code> to <code>N - 1</code>
+  - Range of internal nodes in a heap: 0 to <code>(N / 2) - 1</code>
+  - Range of the entire heap: 0 to <code>N / 2 -1 </code> and <code>N / 2</code> to <code>N - 1</code>
+  - Max-heap have the element in the array in descending order
+  - Min-heap have the element in the array in ascending order
+
+- Heapify Algorithm:
+  - Heapify is the process of converting an array into a heap.
+  - The process involves starting from the last non-leaf node and moving up the tree recursively.
+- Build heapy Algorithm:
+  - 
+## K-th Largest Element in an Array
+
+- My first normal simple solution for this:
+  - Sort the array in descending order and then Get the K-th element from the sorted array. 1st -> index 0, 2nd -> index 1, ..., K-th -> index K-1
+  - The time complexity of this solution is O(N log N) due to sorting the array.
+  - The space complexity is O(1) as we are not using any extra space.
+- Second solution:
+  - Use a min-heap of size K to store the K largest elements.
+  - Traverse the array and add elements to the heap.
+  - If the heap size exceeds K, remove the smallest element from the heap.
+  - The top element of the heap will be the K-th largest element.
+  - The time complexity of this solution is O(N log K) due to inserting N elements into the heap.
+  - The space complexity is O(K) for the heap.
+  
