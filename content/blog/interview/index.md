@@ -238,14 +238,46 @@ func main() {
 > **Interviewer:** Design a payment flow that can handle multiple transactions simultaneously.
 > 
 > **You:**
-> "To design a scalable payment system, I would use microservices architecture. Each service would handle a specific part of the payment process, such as authentication, transaction processing, and notification. I would use a message queue like RabbitMQ to handle communication between services and ensure reliability. For security, I would implement encryption and tokenization. Here is a high-level diagram of the system:"
+> "Before deciding on the design, I have a few questions to better understand the requirements:
+> 1. Functional requirements: 
+>   What kind of payment system are we building?
+>    - Customer -> Merchant -> Payment Service -> Payment Service Provider(payment gateway, bank) -> Merchant
+>   Main features:
+>    - Get balance, make payment
+>    - Handle payment using a payment service provider
+>   Main components:
+>    - Payment service: coordinate payment flow, interact with PSP
+>    - Wallet: manage user balances (view)
+>    - Ledger: record transactions (reconciliation)
+> 2. Non-functional requirements: Reliability, Fault-tolerance, Scalability, Security
+> How should the system handle failures and inappropriate payments?
+>    - Implement retries, timeouts, and fallbacks to guarantee transaction completion
+>    - Implement dead-letter queues for failed transactions
+>    - Implement Idempotency to prevent duplicate payments
+> What security measures need to be implemented?
+>    - Encrypt data at rest (database) and in transit (API)
+>    - Access control
+> Some of the base estimates:
+>    - 3000 concurrent requests
+>    - 2500 reads + 500 writes
+>    - how many transactions per second? 1000 TPS
+
+#### Functional requirements:
+   - Handle payment using a payment service provider (handle payment gateway, risk check, bank, etc.)
+   - Wallet & ledger
+
+#### Non-functional requirements:
+   - 3000 concurrent requests
+   - 2500 reads + 500 writes
+   - Encryption, tokenization
+   - Low cost
+   - Database only have max 250 open connections
 
 1. **Scalability:** Use microservices and message queues to handle high volumes of transactions.
 2. **Error Handling:** Implement retries, timeouts, and failure recovery mechanisms.
 3. **Security:** Use encryption and tokenization to secure transactions.
 4. **Logging & Monitoring:** Set up alerts and logs using tools like Grafana and Prometheus.
 5. **Tech Stack:** Use AWS for scalability, Docker for containerization, and Kubernetes for orchestration.
-
 ### Question 2: Rate Limiter Design
 
 > **Interviewer:** Design a rate-limiting mechanism to prevent abuse of an API.
@@ -380,8 +412,8 @@ func main() {
 - Heapify Algorithm:
   - Heapify is the process of converting an array into a heap.
   - The process involves starting from the last non-leaf node and moving up the tree recursively.
-- Build heapy Algorithm:
-  - 
+  - Only able to heapify the internal nodes, not the leaves and all the leaves are already heapify.
+  
 ## K-th Largest Element in an Array
 
 - My first normal simple solution for this:

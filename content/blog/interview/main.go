@@ -2,39 +2,27 @@ package main
 
 import (
 	"fmt"
-	"slices"
+	"sort"
 )
 
-func main() {
-
-	// find the K-th largest element in the array
-	// 1. sort the array in ascending order
-	// 2. return the K-th element from the end of the array; 1st -> in[len(in)-1]; 2nd -> in[len(in)-2]; 3rd -> in[len(in)-3]; ...; Kth -> in[len(in)-K]
-	// 3. if the array is empty, return -1
-
-	// Test cases
-	fmt.Println(Solution([]int{1, 9, 3, 3, 7}, 2)) // Expected: 7
-	fmt.Println(Solution([]int{}, 1))              // Expected: -1 (empty array)
-	fmt.Println(Solution([]int{5}, 1))             // Expected: 5 (single element)
-	fmt.Println(Solution([]int{5, 5, 5, 5}, 2))    // Expected: 5 (all elements are the same)
-	fmt.Println(Solution([]int{1, 2, 3, 4, 5}, 5)) // Expected: 1 (K is the length of the array)
-	fmt.Println(Solution([]int{1, 2, 3, 4, 5}, 6)) // Expected: -1 (K is greater than the length of the array)
-	fmt.Println(Solution([]int{1, 2, 3, 4, 5}, 0))
+type ListNode struct {
+	Val  int
+	Next *ListNode
 }
 
-func Solution(in []int, k int) int {
-	if k > len(in) {
-		// error case
-		return -1
+func main() {
+	input := &ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4}}}}
+	fmt.Println(Solution(input).Val) // [0,1]
+
+	sort.Sort()
+}
+
+func Solution(input *ListNode) *ListNode {
+	// middle of the linked list
+	slow, fast := input, input
+	for fast != nil && fast.Next != nil {
+		slow = slow.Next
+		fast = fast.Next.Next
 	}
-	if k < 1 {
-		// error case
-		return -1
-	}
-	if len(in) == 0 {
-		// error case
-		return -1
-	}
-	slices.Sort(in)
-	return in[len(in)-k]
+	return slow
 }
