@@ -2,27 +2,27 @@ package main
 
 import (
 	"fmt"
-	"sort"
 )
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
 func main() {
-	input := &ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4}}}}
-	fmt.Println(Solution(input).Val) // [0,1]
+	//fmt.Println(Solution3([]int{2, 5, 7, 11}, 9))           // [0,1]
+	fmt.Println(Solution3([]int{3, 3, 4, 5, 7, 10, 11}, 6)) // [0,1]
 
-	sort.Sort()
+	// value : index
+	// 0; 9-1 = 8; not in map; add 1:0
+	// 1; 9-3 = 6; not in map; add 3:1
+	// 2; 9-4 = 5; not in map; add 4:2
+	// 3; 9-5 = 4; 4 in map; return map[4]:2, current index:3
 }
 
-func Solution(input *ListNode) *ListNode {
-	// middle of the linked list
-	slow, fast := input, input
-	for fast != nil && fast.Next != nil {
-		slow = slow.Next
-		fast = fast.Next.Next
+func Solution3(input []int, target int) []int {
+	m := make(map[int]int, len(input))
+	for i, v := range input {
+		j, ok := m[target-v]
+		if ok {
+			return []int{j, i}
+		}
+		m[v] = i
 	}
-	return slow
+	return nil
 }

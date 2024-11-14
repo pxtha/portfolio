@@ -111,11 +111,11 @@ This round focuses on your past experience, problem-solving approaches, and fit 
 > **Interviewer**: Can you please introduce yourself and give us a brief overview of your professional background?
 > 
 > **You**: "Hello,
-> my name is \[Your Name\]. I have over 5 years of professional experience in software development, specializing in backend development with Golang. I have successfully developed, maintained, and optimized server-side applications and APIs. My expertise includes building RESTful APIs, microservices, and managing SQL and NoSQL databases such as PostgreSQL and MongoDB.
+> my name is \[Your Name\]. I have over 5 years of professional experience in software development, specializing in backend development with Golang. I have successfully led a team of 5 to develop, maintain, and optimize applications. My expertise includes building RESTful APIs, microservices, and managing databases such as PostgreSQL, Redis, MongoDB, and Dgraph.
 > 
-> Additionally, I have experience in fullstack integration, ensuring smooth functionality between frontend and backend components. I have implemented various testing frameworks and tools to ensure application reliability and performance. I am also familiar with DevOps practices, including CI/CD pipelines, Docker, and Kubernetes, and have experience with cloud platforms like AWS.
+> Additionally, I have experience in full-stack integration, ensuring smooth functionality between frontend and backend components. I have implemented various testing frameworks and tools to ensure application reliability and performance. I am also familiar with DevOps practices, including CI/CD pipelines, Docker, and Kubernetes, and have experience with cloud platforms like AWS.
 >
-> Besides my technical skills, I enjoy teaching and mentoring. I also work as a freelance developer in my free time, communicating, handling requirements, task breakdowns, cost estimation, hiring people, and project delivery.
+> Besides my technical skills, I enjoy teaching and mentoring. I also work as a freelance developer in my free time, handling requirements, task breakdowns, cost estimation, hiring, team management, and project delivery.
 ## Technical Coding Round
 
 ### Question 1: K-th Largest Element in an Array
@@ -239,25 +239,38 @@ func main() {
 > 
 > **You:**
 > "Before deciding on the design, I have a few questions to better understand the requirements:
-> 1. Functional requirements: 
->   What kind of payment system are we building?
->    - Customer -> Merchant -> Payment Service -> Payment Service Provider(payment gateway, bank) -> Merchant
->   Main features:
->    - Get balance, make payment
->    - Handle payment using a payment service provider
->   Main components:
->    - Payment service: coordinate payment flow, interact with PSP
->    - Wallet: manage user balances (view)
->    - Ledger: record transactions (reconciliation)
-> 2. Non-functional requirements: Reliability, Fault-tolerance, Scalability, Security
+> 
+> **Functional requirements**: 
+> 
+> What kind of payment system are we building?
+>   - Customer -> Merchant -> Payment Service -> Payment Service Provider(payment gateway, bank) -> Merchant
+> 
+> Main features:
+>   - Get balance, make payment
+>   - Handle payment using a payment service provider
+> 
+> Main components:
+>   - Payment service: coordinate payment flow, interact with PSP
+>   - Wallet: manage user balances (view)
+>   - Ledger: record transactions (reconciliation)
+> 
+> **Non-functional requirements**:
+> 
+> Reliability, Fault-tolerance, Scalability, Security
+> 
 > How should the system handle failures and inappropriate payments?
 >    - Implement retries, timeouts, and fallbacks to guarantee transaction completion
 >    - Implement dead-letter queues for failed transactions
 >    - Implement Idempotency to prevent duplicate payments
+> 
 > What security measures need to be implemented?
 >    - Encrypt data at rest (database) and in transit (API)
 >    - Access control
+> 
 > Some of the base estimates:
+>    - DAU: 1M
+>    - Transactions per day: 1M
+>    - Peak traffic: 10K TPS
 >    - 3000 concurrent requests
 >    - 2500 reads + 500 writes
 >    - how many transactions per second? 1000 TPS
